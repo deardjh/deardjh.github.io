@@ -431,11 +431,19 @@
                   
                 
               
-              目前共计 2 个标签
+                
+                  
+                
+              
+                
+                  
+                
+              
+              目前共计 4 个标签
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/Hexo/" style="font-size: 14px; color: #ccc">Hexo</a> <a href="/tags/Linux/" style="font-size: 14px; color: #ccc">Linux</a>
+                <a href="/tags/Graph-Convolution-Network/" style="font-size: 14px; color: #ccc">Graph Convolution Network</a> <a href="/tags/Hexo/" style="font-size: 14px; color: #ccc">Hexo</a> <a href="/tags/Linux/" style="font-size: 14px; color: #ccc">Linux</a> <a href="/tags/Relation-Extraction/" style="font-size: 14px; color: #ccc">Relation Extraction</a>
               
             </div>
           </div>
@@ -494,7 +502,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -515,7 +523,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -536,7 +546,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -812,6 +826,32 @@
 
 
   
+<script>
+if ($('body').find('div.pdf').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      $('body').find('div.pdf').each(function(i, o) {
+        PDFObject.embed($(o).attr('target'), $(o), {
+          pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: 'thumbs',
+            view: 'FitH'
+          },
+          PDFJS_URL: '/lib/pdf/web/viewer.html',
+          height: $(o).attr('height') || '888px'
+        });
+      });
+    },
+  });
+}
+</script>
+
 
   
 
