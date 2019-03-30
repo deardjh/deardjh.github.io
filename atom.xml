@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://deardjh.github.io/"/>
-  <updated>2019-03-30T02:12:18.134Z</updated>
+  <updated>2019-03-30T05:56:58.257Z</updated>
   <id>https://deardjh.github.io/</id>
   
   <author>
@@ -17,11 +17,77 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Chrome-好用的插件</title>
+    <link href="https://deardjh.github.io/2019/03/30/Chrome-%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/"/>
+    <id>https://deardjh.github.io/2019/03/30/Chrome-好用的插件/</id>
+    <published>2019-03-30T05:30:20.000Z</published>
+    <updated>2019-03-30T05:56:58.257Z</updated>
+    
+    <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#easy-to-rss">Easy to RSS</a></li><li><a href="#cvim">cVim</a></li><li><a href="#idm-integration-module">IDM Integration Module</a></li><li><a href="#infinity">Infinity</a></li><li><a href="#onetab">OneTab</a></li><li><a href="#octotree">Octotree</a></li><li><a href="#xpath-helper">XPath Helper</a></li><li><a href="#open-in-colab">Open in Colab</a></li><li><a href="#sourcegraph">Sourcegraph</a></li></ul><!-- tocstop --><p></div></p><h2><span id="easy-to-rss">Easy to RSS</span><a href="#easy-to-rss" class="header-anchor">#</a></h2><blockquote><p>Retreive RSS feeds URLs from WebSite, RSSHub supported</p></blockquote><h2><span id="cvim">cVim</span><a href="#cvim" class="header-anchor">#</a></h2><blockquote><p>An extension adding Vim-like bindings to Google Chrome</p></blockquote><h2><span id="idm-integration-module">IDM Integration Module</span><a href="#idm-integration-module" class="header-anchor">#</a></h2><blockquote><p>Download files with Internet Download Manager</p></blockquote><h2><span id="infinity">Infinity</span><a href="#infinity" class="header-anchor">#</a></h2><blockquote><p>百万用户选择的新标签页和快速拨号，自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录</p></blockquote><h2><span id="onetab">OneTab</span><a href="#onetab" class="header-anchor">#</a></h2><blockquote><p>节省高达95％的内存，并减轻标签页混乱现象</p></blockquote><h2><span id="octotree">Octotree</span><a href="#octotree" class="header-anchor">#</a></h2><blockquote><p>Code tree for GitHub</p></blockquote><h2><span id="xpath-helper">XPath Helper</span><a href="#xpath-helper" class="header-anchor">#</a></h2><blockquote><p>Extract, edit, and evaluate XPath queries with ease.</p></blockquote><h2><span id="open-in-colab">Open in Colab</span><a href="#open-in-colab" class="header-anchor">#</a></h2><blockquote><p>Open a Github-hosted notebook in Google Colab</p></blockquote><h2><span id="sourcegraph">Sourcegraph</span><a href="#sourcegraph" class="header-anchor">#</a></h2><blockquote><p>Code intelligence for your code host and code reviews: hovers, documentation, definitions, and references in files, PRs, and diffs</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;toc&quot;&gt;
+
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#easy-to-rss&quot;&gt;Easy to RSS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#cvim&quot;&gt;cVim&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#idm-int
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://deardjh.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://deardjh.github.io/tags/Python/"/>
+    
+      <category term="Tools" scheme="https://deardjh.github.io/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python 好用的包</title>
+    <link href="https://deardjh.github.io/2019/03/30/Python-%E5%A5%BD%E7%94%A8%E7%9A%84%E5%8C%85/"/>
+    <id>https://deardjh.github.io/2019/03/30/Python-好用的包/</id>
+    <published>2019-03-30T05:07:50.000Z</published>
+    <updated>2019-03-30T05:41:17.479Z</updated>
+    
+    <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#matplotlib">Matplotlib</a></li><li><a href="#seaborn">Seaborn</a></li><li><a href="#plotly">Plotly</a></li><li><a href="#pycharts">PyCharts</a></li><li><a href="#dash">Dash</a></li><li><a href="#python-goose">python-goose</a></li><li><a href="#tqdm">tqdm</a></li><li><a href="#loguru">loguru</a></li><li><a href="#ds-cheatsheets">ds-cheatsheets</a></li><li><a href="#scrapydweb">scrapydweb</a></li></ul><!-- tocstop --></div><h2><span id="matplotlib">Matplotlib</span><a href="#matplotlib" class="header-anchor">#</a></h2><ul><li><a href="https://www.baidu.com/link?url=HXk3x4Z275ld5Y_Cy2eXi58S7L5ex_h_3jNjv2ye_WA5jZmxYSA4g6CLFWjGWOl2&amp;wd=&amp;eqid=fead2e760000ece6000000025c9f0049" target="_blank" rel="noopener">Matplotlib</a></li></ul><h2><span id="seaborn">Seaborn</span><a href="#seaborn" class="header-anchor">#</a></h2><ul><li><a href="https://www.baidu.com/link?url=lmJpD7PAqf6N2CgKMTz1wlllJgfX7b6lQEmk_6P78F-dr8sp6q94XFLiUb76sCck&amp;wd=&amp;eqid=f41f2e390000cbbd000000025c9f0065" target="_blank" rel="noopener">Seaborn</a></li></ul><h2><span id="plotly">Plotly</span><a href="#plotly" class="header-anchor">#</a></h2><ul><li><a href="https://www.baidu.com/link?url=EFoDs0y7uVDJPCezUzBdAGH2tJXzS4V3Pv7hsg5QFpRGp-Q4TmaBooYpK9kHfXiX&amp;wd=&amp;eqid=e7503f6c00016133000000025c9f0078" target="_blank" rel="noopener">Plotly</a></li></ul><h2><span id="pycharts">PyCharts</span><a href="#pycharts" class="header-anchor">#</a></h2><ul><li><a href="https://www.baidu.com/link?url=fkS8Msl6v8bwP2uT1hj8XsYvMqXoABRbtLIqlJ2sF9C&amp;wd=&amp;eqid=d0f14d01000057bc000000025c9f00a0" target="_blank" rel="noopener">Pycharts</a></li></ul><h2><span id="dash">Dash</span><a href="#dash" class="header-anchor">#</a></h2><ul><li><a href="https://github.com/plotly/dash" target="_blank" rel="noopener">Dash</a></li><li>一款只用几百行 Python 代码就可以轻易实现数据分析可视化的利器，是目前 Python 社区数据可视化主要的工具之一。具有：使用简单、易于扩展、开发团队活跃等特点 </li></ul><h2><span id="python-goose">python-goose</span><a href="#python-goose" class="header-anchor">#</a></h2><ul><li><a href="https://github.chttps://www.baidu.com/link?url=fkS8Msl6v8bwP2uT1hj8XsYvMqXoABRbtLIqlJ2sF9C&amp;wd=&amp;eqid=d0f14d01000057bc000000025c9f00a0om/grangier/python-goose" target="_blank" rel="noopener">python-goose</a></li><li>Goose 用于文章提取器，提取中文内容<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> goose <span class="keyword">import</span> Goose</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> goose.text <span class="keyword">import</span> StopWordsChinese</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>url  = <span class="string">'http://www.bbc.co.uk/zhongwen/simp/chinese_news/2012/12/121210_hongkong_politics.shtml'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>g = Goose(&#123;<span class="string">'stopwords_class'</span>: StopWordsChinese&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>article = g.extract(url=url)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> article.cleaned_text[:<span class="number">150</span>]</span><br><span class="line">香港行政长官梁振英在各方压力下就其大宅的违章建筑（僭建）问题到立法会接受质询，并向香港民众道歉。</span><br></pre></td></tr></table></figure></li></ul><h2><span id="tqdm">tqdm</span><a href="#tqdm" class="header-anchor">#</a></h2><ul><li><a href="https://github.com/tqdm/tqdm" target="_blank" rel="noopener">tqdm</a></li><li>强大、快速、易扩展的 Python 进度条库<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(range(<span class="number">10000</span>)):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="comment"># 输出结果：</span></span><br><span class="line"><span class="comment"># 76%|████████████████████████████         | 7568/10000 [00:33&lt;00:10, 229.00it/s]</span></span><br></pre></td></tr></table></figure></li></ul><h2><span id="loguru">loguru</span><a href="#loguru" class="header-anchor">#</a></h2><ul><li><a href="https://github.com/Delgan/loguru" target="_blank" rel="noopener">loguru</a></li><li>一个让Python日志变得简单的库<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> loguru</span><br><span class="line">&gt;&gt;&gt;loguru.logger.info(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | INFO     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br><span class="line">&gt;&gt;&gt;loguru.logger.debug(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | DEBUG     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br><span class="line">&gt;&gt;&gt;loguru.logger.error(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | ERROR     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br></pre></td></tr></table></figure></li></ul><h2><span id="ds-cheatsheets">ds-cheatsheets</span><a href="#ds-cheatsheets" class="header-anchor">#</a></h2><ul><li><a href="https://github.com/FavioVazquez/ds-cheatsheets" target="_blank" rel="noopener">ds-cheatsheets</a></li><li>Python 在数据科学方面使用库的速查表，包含了 Pandas、Jupyter、SQL、Dask 等。虽然都是些基本的 API 调用，但是用来备忘和速查足以。</li></ul><h2><span id="scrapydweb">scrapydweb</span><a href="#scrapydweb" class="header-anchor">#</a></h2><ul><li><a href="https://github.com/my8100/scrapydweb" target="_blank" rel="noopener">scrapydweb</a></li><li>Scrapy 爬虫管理平台，支持：Scrapyd 集群管理、日志可视化、定时任务、邮件通知、移动端 UI</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;div class=&quot;toc&quot;&gt;
+
+&lt;!-- toc --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#matplotlib&quot;&gt;Matplotlib&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#seaborn&quot;&gt;Seaborn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#plo
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://deardjh.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://deardjh.github.io/tags/Python/"/>
+    
+      <category term="Tools" scheme="https://deardjh.github.io/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Graph Convolution over Pruned Dependency Trees Improves Relation Extraction</title>
     <link href="https://deardjh.github.io/2019/03/29/Graph%20Convolution%20over%20Pruned%20Dependency%20Trees%20Improves%20Relation%20Extraction/"/>
     <id>https://deardjh.github.io/2019/03/29/Graph Convolution over Pruned Dependency Trees Improves Relation Extraction/</id>
     <published>2019-03-29T12:07:12.000Z</published>
-    <updated>2019-03-30T02:12:18.134Z</updated>
+    <updated>2019-03-30T05:14:31.856Z</updated>
     
     <content type="html"><![CDATA[<p>论文：Graph Convolution over Pruned Dependency Trees Improves Relation Extraction<br>作者：Yuhao Zhang,<em> Peng Qi,</em> Christopher D. Manning<br>时间：1809<br>单位：Stanford University<br>会议：EMNLP<br>代码链接：无</p><h2><span id="zhai-yao">摘要</span><a href="#zhai-yao" class="header-anchor">#</a></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>句子依赖树能够帮助关系提取模型捕获远距离关系。</span><br><span class="line"><span class="number">2.</span>但是, 现有的基于依赖的模型要么过于激进地修剪依赖关系树, 从而忽略了关键信息 (例如否定), 要么由于难以在不同的树结构上并行化而在配置上效率低下。</span><br><span class="line"><span class="number">3.</span>本文提出了一种为关系提取量身定制的图形卷积网络的扩展, 它能有效地同时将任意依赖结构上的信息汇集在一起。</span><br><span class="line">    <span class="number">3.1</span>为了在最大限度地删除不相关内容的同时整合相关信息, 本文进一步将一种新的修剪策略应用于输入树, 方法是将单词紧跟在关系可能存在的两个实体之间的最短路径周围。</span><br><span class="line"><span class="number">4.</span>由此产生的模型在大型TAC代价数据集上实现了最先进的性能, 优于现有序列和基于依赖的神经模型。通过详细的分析, 结果还表明该模型具有对序列模型的互补优势, 并将其结合起来, 进一步改善了最新的水平</span><br></pre></td></tr></table></figure><div class="pdf" target="pdf.pdf" height></div>]]></content>
     
