@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,7 +59,7 @@
     
     
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-bounce.min.css?v=1.0.2">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css?v=1.0.2">
 
 
 
@@ -107,14 +107,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '7.0.1',
     sidebar: {"position":"left","display":"hide","offset":12,"onmobile":true,"dimmer":true},
     back2top: true,
     back2top_sidebar: true,
     fancybox: false,
     fastclick: false,
-    lazyload: false,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -133,22 +133,22 @@
 
 
 
-  <meta name="description" content="learn-python cs231 python cs228 python scipy numpy  123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12">
+  <meta name="description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
 <meta name="keywords" content="Python,Numpy">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Numpy | 基本用法">
 <meta property="og:url" content="https://deardjh.github.io/2019/03/30/python-numpy/index.html">
-<meta property="og:site_name" content="Jhai.Dai&#39;s  Blog">
-<meta property="og:description" content="learn-python cs231 python cs228 python scipy numpy  123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12">
+<meta property="og:site_name" content="Jhai.Dai">
+<meta property="og:description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-31T06:39:20.285Z">
+<meta property="og:updated_time" content="2019-04-01T03:35:36.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Numpy | 基本用法">
-<meta name="twitter:description" content="learn-python cs231 python cs228 python scipy numpy  123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12">
+<meta name="twitter:description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Jhai.Dai's  Blog" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Jhai.Dai" type="application/atom+xml">
 
 
 
@@ -163,7 +163,7 @@
   };
 </script>
 
-  <title>Numpy | 基本用法 | Jhai.Dai's  Blog</title>
+  <title>Numpy | 基本用法 | Jhai.Dai</title>
   
 
 
@@ -222,13 +222,13 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Jhai.Dai's  Blog</span>
+        <span class="site-title">Jhai.Dai</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
     
       
-        <p class="site-subtitle">不积跬步无以至千里，不积小流无以成江海</p>
+        <p class="site-subtitle">不积小流无以成江海</p>
       
     
     
@@ -334,23 +334,6 @@
     <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user                   //关于"></i> <br>关于</a>
 
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-commonweal">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat          //公益404"></i> <br>公益 404</a>
-
-  </li>
 
       
       
@@ -364,9 +347,6 @@
       
     </ul>
   
-
-  
-    
 
   
 
@@ -404,11 +384,23 @@
     </header>
 
     
+  
+  
+  
+  
+
+  
+
+  <a href="https://github.com/jasonhavend" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewbox="0 0 250 250" style="fill: #222; color: #fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a>
+
 
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -438,7 +430,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jhai.Dai's  Blog">
+      <meta itemprop="name" content="Jhai.Dai">
     </span>
 
     
@@ -490,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-31` 14:39:20" itemprop="dateModified" datetime="2019-03-31T14:39:20+08:00">2019-03-31`</time>
+                <time title="修改时间：2019-04-01` 11:35:36" itemprop="dateModified" datetime="2019-04-01T11:35:36+08:00">2019-04-01`</time>
               
             
           </span>
@@ -522,6 +514,17 @@
 
           
           
+            <span id="/2019/03/30/python-numpy/" class="leancloud_visitors" data-flag-title="Numpy | 基本用法">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
 
           
             <span class="post-meta-divider">|</span>
@@ -543,7 +546,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">6.1k</span>
+                <span title="本文字数">6.2k</span>
               
 
               
@@ -577,13 +580,17 @@
       
 
       
-        <ul>
-<li><a href="https://hackr.io/tutorials/learn-python" target="_blank" rel="noopener">learn-python</a></li>
-<li><a href="http://cs231n.github.io/python-numpy-tutorial/" target="_blank" rel="noopener">cs231 python</a></li>
-<li><a href="https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb" target="_blank" rel="noopener">cs228 python</a></li>
-<li><a href="https://docs.scipy.org/doc/" target="_blank" rel="noopener">scipy</a></li>
-<li><a href="https://www.numpy.org.cn/" target="_blank" rel="noopener">numpy</a></li>
+        <h1><span id="mu-lu">目录</span><a href="#mu-lu" class="header-anchor">#</a></h1><div class="toc">
+
+<!-- toc -->
+<ul>
+<li><a href="#basic-numpy">basic numpy</a></li>
+<li><a href="#ndarray-and-indexing">ndarray and indexing</a></li>
+<li><a href="#zi-liao">资料</a></li>
 </ul>
+<!-- tocstop -->
+</div>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 小技巧，实现多行输出</span></span><br><span class="line"><span class="keyword">from</span> IPython.core.interactiveshell <span class="keyword">import</span> InteractiveShell </span><br><span class="line">InteractiveShell.ast_node_interactivity = <span class="string">'all'</span> <span class="comment">#默认为'last'</span></span><br></pre></td></tr></table></figure>
 <h1><span id="basic-numpy">basic numpy</span><a href="#basic-numpy" class="header-anchor">#</a></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建向量</span></span><br><span class="line">vector = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line"><span class="comment"># 创建矩阵</span></span><br><span class="line">matrix = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>],</span><br><span class="line">                    [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">                    [<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]])</span><br><span class="line"><span class="comment"># 转置向量</span></span><br><span class="line">vector.T</span><br><span class="line"><span class="comment"># 转置矩阵</span></span><br><span class="line">matrix.T</span><br><span class="line"><span class="comment"># 将矩阵变形为 2x6 矩阵</span></span><br><span class="line">matrix.reshape(<span class="number">2</span>, <span class="number">6</span>)</span><br><span class="line"><span class="comment"># 计算矩阵的逆</span></span><br><span class="line">np.linalg.inv(matrix)</span><br><span class="line"><span class="comment"># 返回对角线元素</span></span><br><span class="line">matrix.diagonal()</span><br><span class="line"><span class="comment"># 创建矩阵的迹 计算矩阵的迹</span></span><br><span class="line">matrix.diagonal().sum()</span><br><span class="line"><span class="comment"># 展开矩阵</span></span><br><span class="line">matrix.flatten()</span><br><span class="line"><span class="comment"># 返回矩阵的秩</span></span><br><span class="line">np.linalg.matrix_rank(matrix)</span><br><span class="line"><span class="comment"># 返回最大元素最小元素</span></span><br><span class="line">np.min(matrix)</span><br><span class="line">np.max(matrix)</span><br><span class="line"><span class="comment">#每列的最大元素</span></span><br><span class="line">np.max(matrix, axis=<span class="number">0</span>)<span class="comment">#列反向</span></span><br><span class="line">每行的最大元素</span><br><span class="line">np.max(matrix, axis=<span class="number">1</span>)<span class="comment">#行反向</span></span><br><span class="line"><span class="comment"># 查看行和列数</span></span><br><span class="line">matrix.shape</span><br><span class="line"><span class="comment"># 查看元素数(行乘列)</span></span><br><span class="line">matrix.size</span><br><span class="line"><span class="comment"># 查看维数</span></span><br><span class="line">matrix.ndim</span><br><span class="line"><span class="comment"># 创建稀疏矩阵</span></span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> sparse</span><br><span class="line"><span class="comment"># 创建矩阵</span></span><br><span class="line">matrix = np.array([[<span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">                [<span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">                [<span class="number">3</span>, <span class="number">0</span>]])</span><br><span class="line"><span class="comment"># 创建压缩稀疏行(CSR)矩阵</span></span><br><span class="line">matrix_sparse = sparse.csr_matrix(matrix)</span><br><span class="line"></span><br><span class="line"><span class="comment">#将字典转换为矩阵DictVectorizer</span></span><br><span class="line"><span class="comment"># 加载库</span></span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="comment"># 我们的数据字典</span></span><br><span class="line">data_dict = [&#123;<span class="string">'Red'</span>:<span class="number">2</span>,<span class="string">'Blue'</span>: <span class="number">4</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">4</span>,<span class="string">'Blue'</span>: <span class="number">3</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">1</span>,<span class="string">'Yellow'</span>: <span class="number">2</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">2</span>,<span class="string">'Yellow'</span>: <span class="number">2</span>&#125;]</span><br><span class="line"><span class="comment"># 创建 DictVectorizer 对象</span></span><br><span class="line">dictvectorizer = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"><span class="comment"># 将字典转换为特征矩阵</span></span><br><span class="line">features = dictvectorizer.fit_transform(data_dict)</span><br><span class="line"><span class="comment"># 查看特征矩阵</span></span><br><span class="line">features</span><br><span class="line"><span class="comment"># 查看特征矩阵的列名</span></span><br><span class="line">dictvectorizer.get_feature_names()</span><br><span class="line"><span class="comment"># ['Blue', 'Red', 'Yellow']</span></span><br><span class="line"><span class="comment"># 返回矩阵的行列式</span></span><br><span class="line">np.linalg.det(matrix)</span><br><span class="line"><span class="comment"># 返回均值</span></span><br><span class="line">np.mean(matrix)</span><br><span class="line"><span class="comment"># 返回方差</span></span><br><span class="line">np.var(matrix)</span><br><span class="line"><span class="comment"># 返回标准差</span></span><br><span class="line">np.std(matrix)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建两个向量</span></span><br><span class="line">vector_a = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">vector_b = np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line"><span class="comment"># 计算点积</span></span><br><span class="line">np.dot(vector_a, vector_b)</span><br><span class="line"><span class="comment"># 计算点积</span></span><br><span class="line">vector_a @ vector_b</span><br></pre></td></tr></table></figure>
 <h1><span id="ndarray-and-indexing">ndarray and indexing</span><a href="#ndarray-and-indexing" class="header-anchor">#</a></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1D Array</span></span><br><span class="line">a = np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">b = np.array((<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>))</span><br><span class="line">c = np.arange(<span class="number">5</span>)<span class="comment">#arange([start,] stop[, step,], dtype=None)</span></span><br><span class="line">d = np.linspace(<span class="number">0</span>, <span class="number">2</span>*np.pi, <span class="number">5</span>)<span class="comment">#np.linspace(start, stop, num=50...)</span></span><br><span class="line">a</span><br><span class="line">b</span><br><span class="line">c</span><br><span class="line">d</span><br></pre></td></tr></table></figure>
@@ -603,32 +610,16 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>], [<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>], [<span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]])</span><br><span class="line">v = np.array([<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>])</span><br><span class="line">y = np.empty_like(x)   <span class="comment"># Create an empty matrix with the same shape as x</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># solve求解线性方程组 Ax=b</span></span><br><span class="line">A = np.array([[<span class="number">2</span>,<span class="number">1</span>,<span class="number">-2</span>],[<span class="number">3</span>,<span class="number">0</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">1</span>,<span class="number">-1</span>]])</span><br><span class="line">b = np.transpose(np.array([[<span class="number">-3</span>,<span class="number">5</span>,<span class="number">-2</span>]]))</span><br><span class="line">x = np.linalg.solve(A,b)</span><br><span class="line">A</span><br><span class="line">b</span><br><span class="line">x</span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">load</span><span class="params">()</span>:</span></span><br><span class="line">    X = []</span><br><span class="line">    y = []</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'Housing.csv'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        rdr = csv.reader(f)</span><br><span class="line">        <span class="comment"># Skip the header row</span></span><br><span class="line">        next(rdr)</span><br><span class="line">        <span class="comment"># Read X and y</span></span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> rdr:</span><br><span class="line">            xline = [<span class="number">1.0</span>] <span class="comment">#bias</span></span><br><span class="line">            <span class="keyword">for</span> s <span class="keyword">in</span> line[:<span class="number">-1</span>]:</span><br><span class="line">                xline.append(float(s))</span><br><span class="line">            X.append(xline)</span><br><span class="line">            y.append(float(line[<span class="number">-1</span>]))</span><br><span class="line">    <span class="keyword">return</span> (X,y)</span><br><span class="line">X0,y0=load()</span><br><span class="line">X0,y0=np.array(X0),np.array(y0)</span><br><span class="line">X0.shape</span><br><span class="line">y0.shape</span><br><span class="line"></span><br><span class="line">d = len(X0)<span class="number">-10</span></span><br><span class="line">X = np.array(X0[:d])</span><br><span class="line">y = np.transpose(np.array([y0[:d]]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute beta</span></span><br><span class="line">Xt = np.transpose(X)</span><br><span class="line">XtX = np.dot(Xt,X)</span><br><span class="line">Xty = np.dot(Xt,y)</span><br><span class="line">beta = np.linalg.solve(XtX,Xty)</span><br><span class="line">print(beta)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions for the last 10 rows in the data set</span></span><br><span class="line"><span class="keyword">for</span> data,actual <span class="keyword">in</span> zip(X0[d:],y0[d:]):</span><br><span class="line">    x = np.array([data])</span><br><span class="line">    prediction = np.dot(x,beta)</span><br><span class="line">    print(<span class="string">'prediction = '</span>+str(prediction[<span class="number">0</span>,<span class="number">0</span>])+<span class="string">' actual = '</span>+str(actual))</span><br></pre></td></tr></table></figure>
+<h1><span id="zi-liao">资料</span><a href="#zi-liao" class="header-anchor">#</a></h1><ul>
+<li><a href="https://hackr.io/tutorials/learn-python" target="_blank" rel="noopener">learn-python</a></li>
+<li><a href="http://cs231n.github.io/python-numpy-tutorial/" target="_blank" rel="noopener">cs231 python</a></li>
+<li><a href="https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb" target="_blank" rel="noopener">cs228 python</a></li>
+<li><a href="https://docs.scipy.org/doc/" target="_blank" rel="noopener">scipy</a></li>
+<li><a href="https://www.numpy.org.cn/" target="_blank" rel="noopener">numpy</a></li>
+</ul>
 
       
     </div>
-
-    
-      
-
-  <div class="popular-posts-header">相关文章</div>
-  <ul class="popular-posts">
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/2019/03/30/python-好用的包/" rel="bookmark">Python | 好用的包</a></div>
-      
-    </li>
-  
-    <li class="popular-posts-item">
-      
-      
-      <div class="popular-posts-title"><a href="/2019/03/30/numpy-data-analysis/" rel="bookmark">Numpy | 数据分析练习</a></div>
-      
-    </li>
-  
-  </ul>
-
 
     
 
@@ -648,7 +639,7 @@
   <p><span>本文标题:</span><a href="/2019/03/30/python-numpy/">Numpy | 基本用法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Jhai.Dai 的个人博客">Jhai.Dai</a></p>
   <p><span>发布时间:</span>2019年03月30日 - 20:03</p>
-  <p><span>最后更新:</span>2019年03月31日 - 14:03</p>
+  <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 </a> 许可协议。转载请注明出处！</p>
       
     </div>
 
@@ -815,8 +806,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -912,15 +912,23 @@
               
             </nav>
           
+          
+          <div>
+              <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=1329084837&auto=1&height=32"></iframe>
+          </div>
 
+          
           
             <div class="feed-link motion-element">
               <a href="/atom.xml" rel="alternate">
                 <i class="fa fa-rss"></i>
                 RSS
               </a>
+              
             </div>
+            
           
+
 
           
 
@@ -930,34 +938,28 @@
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://github.com/jasonhavend" title="GitHub &rarr; https://github.com/jasonhavend" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/jasonhavend" title="GitHub &rarr; https://github.com/jasonhavend" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="mailto:jhai.dear@gmail.com" title="E-Mail &rarr; mailto:jhai.dear@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:jhai.dear@gmail.com" title="E-Mail &rarr; mailto:jhai.dear@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
                 </span>
               
                 <span class="links-of-author-item">
                   
                   
-                    
-                  
                   
                     
                   
-                  <a href="https://weibo.com/5338420153/info" title="Weibo &rarr; https://weibo.com/5338420153/info" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                  <a href="https://weibo.com/5338420153/info" title="Weibo &rarr; https://weibo.com/5338420153/info" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
                 </span>
               
             </div>
@@ -977,7 +979,24 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
 
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">basic numpy#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">ndarray and indexing#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">资料#</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+      
       
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
@@ -987,6 +1006,7 @@
         </div>
       
 
+      
     </div>
   </aside>
   
@@ -1002,9 +1022,9 @@
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart" aria-hidden="true"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Jhai.Dai</span>
+  <span class="author" itemprop="copyrightHolder">Jianghai DAI</span>
 
   
 
@@ -1012,15 +1032,9 @@
 </div>
 
 
-  <!--<div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>-->
 
 
 
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.1</div>
 
 
 
@@ -1093,6 +1107,7 @@
 
 
 
+  
 
 
 
@@ -1101,6 +1116,10 @@
 
 
 
+
+
+  
+  
 
 
 
@@ -1119,6 +1138,9 @@
   <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
+  <script src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
@@ -1126,6 +1148,9 @@
 
   
   <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
   
   <script src="/lib/three/canvas_lines.min.js"></script>
@@ -1144,7 +1169,9 @@
   
 
 
-  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
 
 
 
@@ -1527,6 +1554,71 @@
 
 
   
+  
+  <script>
+    
+    function addCount(Counter) {
+      var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
+        .done(function({ results }) {
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
+          }
+        })
+        .fail(function ({ responseJSON }) {
+          console.log('LeanCloud Counter Error: ' + responseJSON.code + ' ' + responseJSON.error);
+        });
+    }
+    
+
+    $(function() {
+      $.get('https://app-router.leancloud.cn/2/route?appId=' + '42YqQQW3rYlDAk8C1bPECiaV-gzGzoHsz')
+        .done(function({ api_server }) {
+          var Counter = function(method, url, data) {
+            return $.ajax({
+              method: method,
+              url: 'https://' + api_server + '/1.1' + url,
+              headers: {
+                'X-LC-Id': '42YqQQW3rYlDAk8C1bPECiaV-gzGzoHsz',
+                'X-LC-Key': 'j97im32SAxh2dkNzPWMJBEFY',
+                'Content-Type': 'application/json',
+              },
+              data: data
+            });
+          };
+          
+            addCount(Counter);
+          
+        });
+    });
+  </script>
+
+
 
   
 
@@ -1642,6 +1734,5 @@ if ($('body').find('div.pdf').length) {
 
   
 
-  
 </body>
 </html>
