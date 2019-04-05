@@ -50,7 +50,7 @@
     <link href="https://deardjh.github.io/2019/04/03/nginx_reverseproxy/"/>
     <id>https://deardjh.github.io/2019/04/03/nginx_reverseproxy/</id>
     <published>2019-04-03T07:55:03.000Z</published>
-    <updated>2019-04-03T08:12:18.395Z</updated>
+    <updated>2019-04-05T02:53:42.999Z</updated>
     
     <content type="html"><![CDATA[<h1><span id="mu-lu">目录</span><a href="#mu-lu" class="header-anchor">#</a></h1><div class="toc"><!-- toc --><ul><li><a href="#ji-ben-jie-shao">基本介绍</a></li><li><a href="#shi-yong-fang-fa">使用方法</a></li><li><a href="#gong-neng-te-dian">功能特点</a></li><li><a href="#fan-xiang-dai-li">反向代理</a></li><li><a href="#can-kao">参考</a></li></ul><!-- tocstop --></div><h1><span id="ji-ben-jie-shao">基本介绍</span><a href="#ji-ben-jie-shao" class="header-anchor">#</a></h1><h1><span id="shi-yong-fang-fa">使用方法</span><a href="#shi-yong-fang-fa" class="header-anchor">#</a></h1><h1><span id="gong-neng-te-dian">功能特点</span><a href="#gong-neng-te-dian" class="header-anchor">#</a></h1><h1><span id="fan-xiang-dai-li">反向代理</span><a href="#fan-xiang-dai-li" class="header-anchor">#</a></h1><h1><span id="can-kao">参考</span><a href="#can-kao" class="header-anchor">#</a></h1><ul><li><a href="http://www.nginx.cn/doc/index.html" target="_blank" rel="noopener">Nginx 中文文档</a></li></ul>]]></content>
     
@@ -79,7 +79,7 @@
     <link href="https://deardjh.github.io/2019/03/31/recommender_basic/"/>
     <id>https://deardjh.github.io/2019/03/31/recommender_basic/</id>
     <published>2019-03-31T13:02:44.000Z</published>
-    <updated>2019-04-03T08:07:33.913Z</updated>
+    <updated>2019-04-05T02:53:28.270Z</updated>
     
     <content type="html"><![CDATA[<h1><span id="mu-lu">目录</span><a href="#mu-lu" class="header-anchor">#</a></h1><div class="toc"><!-- toc --><ul><li><a href="#jie-shao">介绍</a></li><li><a href="#xiang-guan-ji-zhu">相关技术</a></li><li><a href="#zi-liao">资料</a></li><li><a href="#can-kao">参考</a></li><li><a href="#ming-ci">名词</a></li></ul><!-- tocstop --></div><h1><span id="jie-shao">介绍</span><a href="#jie-shao" class="header-anchor">#</a></h1><h1><span id="xiang-guan-ji-zhu">相关技术</span><a href="#xiang-guan-ji-zhu" class="header-anchor">#</a></h1><h1><span id="zi-liao">资料</span><a href="#zi-liao" class="header-anchor">#</a></h1><ul><li><a href="https://mp.weixin.qq.com/s?__biz=MzU0NjkxMDMyNQ==&amp;mid=2247484467&amp;idx=1&amp;sn=1a2b49fa18e3863e78ac5ab563f44cb0&amp;chksm=fb573d29cc20b43fb5010a526282369a845e04804d8cb0d139a57f0b845c345db0f61586563a&amp;mpshare=1&amp;scene=1&amp;srcid=#rd" target="_blank" rel="noopener">推荐系统工程师技能树-智能推荐系统</a></li></ul><ul><li><a href="https://mp.weixin.qq.com/s?__biz=MzU0NjkxMDMyNQ==&amp;mid=2247484483&amp;idx=1&amp;sn=9fc27c9f8f1713e6219f83aed62f59d4&amp;chksm=fb573d59cc20b44fbd15698846347875ff3d425dd211f79703cadb38a564abf57f62c08010c3&amp;mpshare=1&amp;scene=1&amp;srcid=#rd" target="_blank" rel="noopener">深度学习与推荐系统完结篇201903.31- 智能推荐系统</a></li></ul><h1><span id="can-kao">参考</span><a href="#can-kao" class="header-anchor">#</a></h1><h1><span id="ming-ci">名词</span><a href="#ming-ci" class="header-anchor">#</a></h1>]]></content>
     
