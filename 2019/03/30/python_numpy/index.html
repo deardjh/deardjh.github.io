@@ -133,18 +133,18 @@
 
 
 
-  <meta name="description" content="目录#    Matplotlib Seaborn Plotly PyCharts Dash graphviz NN-SVG knockknock networkx texttable python-goose tqdm loguru ds-cheatsheets scrapydweb 相关连接     Matplotlib# Matplotlib  Seaborn# Seaborn  Plotl">
-<meta name="keywords" content="Tools,Python">
+  <meta name="description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
+<meta name="keywords" content="Python,Numpy">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python | 好用的包">
-<meta property="og:url" content="https://deardjh.github.io/2019/03/30/python-好用的包/index.html">
+<meta property="og:title" content="Numpy | 基本用法">
+<meta property="og:url" content="https://deardjh.github.io/2019/03/30/python_numpy/index.html">
 <meta property="og:site_name" content="Jhai.Dai">
-<meta property="og:description" content="目录#    Matplotlib Seaborn Plotly PyCharts Dash graphviz NN-SVG knockknock networkx texttable python-goose tqdm loguru ds-cheatsheets scrapydweb 相关连接     Matplotlib# Matplotlib  Seaborn# Seaborn  Plotl">
+<meta property="og:description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-31T13:52:58.180Z">
+<meta property="og:updated_time" content="2019-04-03T14:12:17.585Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python | 好用的包">
-<meta name="twitter:description" content="目录#    Matplotlib Seaborn Plotly PyCharts Dash graphviz NN-SVG knockknock networkx texttable python-goose tqdm loguru ds-cheatsheets scrapydweb 相关连接     Matplotlib# Matplotlib  Seaborn# Seaborn  Plotl">
+<meta name="twitter:title" content="Numpy | 基本用法">
+<meta name="twitter:description" content="目录#    basic numpy ndarray and indexing 资料     123# 小技巧，实现多行输出from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &apos;all&apos; #默认为&apos;last&apos; basic numpy#12345678">
 
 
 
@@ -153,7 +153,7 @@
 
 
 
-  <link rel="canonical" href="https://deardjh.github.io/2019/03/30/python-好用的包/">
+  <link rel="canonical" href="https://deardjh.github.io/2019/03/30/python_numpy/">
 
 
 
@@ -163,7 +163,7 @@
   };
 </script>
 
-  <title>Python | 好用的包 | Jhai.Dai</title>
+  <title>Numpy | 基本用法 | Jhai.Dai</title>
   
 
 
@@ -421,7 +421,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deardjh.github.io/2019/03/30/python-好用的包/">
+    <link itemprop="mainEntityOfPage" href="https://deardjh.github.io/2019/03/30/python_numpy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jhai.Dai">
@@ -438,7 +438,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python | 好用的包
+          <h1 class="post-title" itemprop="name headline">Numpy | 基本用法
 
               
             
@@ -465,7 +465,7 @@
                 
               
 
-              <time title="创建时间：2019-03-30` 13:07:50" itemprop="dateCreated datePublished" datetime="2019-03-30T13:07:50+08:00">2019-03-30`</time>
+              <time title="创建时间：2019-03-30` 20:53:37" itemprop="dateCreated datePublished" datetime="2019-03-30T20:53:37+08:00">2019-03-30`</time>
             
 
             
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-31` 21:52:58" itemprop="dateModified" datetime="2019-03-31T21:52:58+08:00">2019-03-31`</time>
+                <time title="修改时间：2019-04-03` 22:12:17" itemprop="dateModified" datetime="2019-04-03T22:12:17+08:00">2019-04-03`</time>
               
             
           </span>
@@ -514,7 +514,7 @@
 
           
           
-            <span id="/2019/03/30/python-好用的包/" class="leancloud_visitors" data-flag-title="Python | 好用的包">
+            <span id="/2019/03/30/python_numpy/" class="leancloud_visitors" data-flag-title="Numpy | 基本用法">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -546,7 +546,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.6k</span>
+                <span title="本文字数">6.2k</span>
               
 
               
@@ -560,7 +560,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">6 分钟</span>
               
             </div>
           
@@ -584,90 +584,39 @@
 
 <!-- toc -->
 <ul>
-<li><a href="#matplotlib">Matplotlib</a></li>
-<li><a href="#seaborn">Seaborn</a></li>
-<li><a href="#plotly">Plotly</a></li>
-<li><a href="#pycharts">PyCharts</a></li>
-<li><a href="#dash">Dash</a></li>
-<li><a href="#graphviz">graphviz</a></li>
-<li><a href="#nn-svg">NN-SVG</a></li>
-<li><a href="#knockknock">knockknock</a></li>
-<li><a href="#networkx">networkx</a></li>
-<li><a href="#texttable">texttable</a></li>
-<li><a href="#python-goose">python-goose</a></li>
-<li><a href="#tqdm">tqdm</a></li>
-<li><a href="#loguru">loguru</a></li>
-<li><a href="#ds-cheatsheets">ds-cheatsheets</a></li>
-<li><a href="#scrapydweb">scrapydweb</a></li>
-<li><a href="#xiang-guan-lian-jie">相关连接</a></li>
+<li><a href="#basic-numpy">basic numpy</a></li>
+<li><a href="#ndarray-and-indexing">ndarray and indexing</a></li>
+<li><a href="#zi-liao">资料</a></li>
 </ul>
 <!-- tocstop -->
 </div>
 
-<h2><span id="matplotlib">Matplotlib</span><a href="#matplotlib" class="header-anchor">#</a></h2><ul>
-<li><a href="https://www.baidu.com/link?url=HXk3x4Z275ld5Y_Cy2eXi58S7L5ex_h_3jNjv2ye_WA5jZmxYSA4g6CLFWjGWOl2&amp;wd=&amp;eqid=fead2e760000ece6000000025c9f0049" target="_blank" rel="noopener">Matplotlib</a></li>
-</ul>
-<h2><span id="seaborn">Seaborn</span><a href="#seaborn" class="header-anchor">#</a></h2><ul>
-<li><a href="https://www.baidu.com/link?url=lmJpD7PAqf6N2CgKMTz1wlllJgfX7b6lQEmk_6P78F-dr8sp6q94XFLiUb76sCck&amp;wd=&amp;eqid=f41f2e390000cbbd000000025c9f0065" target="_blank" rel="noopener">Seaborn</a></li>
-</ul>
-<h2><span id="plotly">Plotly</span><a href="#plotly" class="header-anchor">#</a></h2><ul>
-<li><a href="https://www.baidu.com/link?url=EFoDs0y7uVDJPCezUzBdAGH2tJXzS4V3Pv7hsg5QFpRGp-Q4TmaBooYpK9kHfXiX&amp;wd=&amp;eqid=e7503f6c00016133000000025c9f0078" target="_blank" rel="noopener">Plotly</a></li>
-</ul>
-<h2><span id="pycharts">PyCharts</span><a href="#pycharts" class="header-anchor">#</a></h2><ul>
-<li><a href="https://www.baidu.com/link?url=fkS8Msl6v8bwP2uT1hj8XsYvMqXoABRbtLIqlJ2sF9C&amp;wd=&amp;eqid=d0f14d01000057bc000000025c9f00a0" target="_blank" rel="noopener">Pycharts</a></li>
-</ul>
-<h2><span id="dash">Dash</span><a href="#dash" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/plotly/dash" target="_blank" rel="noopener">Dash</a></li>
-<li>一款只用几百行 Python 代码就可以轻易实现数据分析可视化的利器，是目前 Python 社区数据可视化主要的工具之一。具有：使用简单、易于扩展、开发团队活跃等特点 </li>
-</ul>
-<h2><span id="graphviz">graphviz</span><a href="#graphviz" class="header-anchor">#</a></h2><ul>
-<li><a href="http://www.graphviz.org/" target="_blank" rel="noopener">graphviz</a></li>
-<li>Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks. It has important applications in networking, bioinformatics,  software engineering, database and web design, machine learning, and in visual interfaces for other technical domains. </li>
-</ul>
-<h2><span id="nn-svg">NN-SVG</span><a href="#nn-svg" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/zfrenchee/NN-SVG" target="_blank" rel="noopener">NN-SVG</a></li>
-<li><a href="http://alexlenail.me/NN-SVG/" target="_blank" rel="noopener">Demo</a></li>
-<li>NN-SVG is a tool for creating Neural Network (NN) architecture drawings parametrically rather than manually. It also provides the ability to export those drawings to Scalable Vector Graphics (SVG) files, suitable for inclusion in academic papers or web pages.</li>
-</ul>
-<h2><span id="knockknock">knockknock</span><a href="#knockknock" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/huggingface/knockknock" target="_blank" rel="noopener">knockknock</a></li>
-<li>当你的模型训练完成或者训练过程出现问题时，它会及时通知你。而你只需要写两行代码。</li>
-<li><a href="https://mp.weixin.qq.com/s/WIErqXpNgOkrrapdbv_bLg" target="_blank" rel="noopener">微信文章</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">该库可无缝使用，只需对代码做最小的修改：你只需在主函数调用上加一个装饰器。</span><br><span class="line">现在有两种设置通知的方式：邮件和 Slack。</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2><span id="networkx">networkx</span><a href="#networkx" class="header-anchor">#</a></h2><ul>
-<li><a href="https://www.baidu.com/link?url=Ycy42xUP69426_ljHR827llh2kQ4sgpwL-94vneTKCzoQIRfE1Gu77fhT_EA00xx&amp;wd=&amp;eqid=b65a2b290003c825000000025ca04a24" target="_blank" rel="noopener">networkx</a></li>
-<li>NetworkX是一个用Python语言开发的图论与复杂网络建模工具，内置了常用的图与复杂网络分析算法，可以方便的进行复杂网络数据分析、仿真建模等工作。networkx支持创建简单无向图、有向图和多重图（multigraph）；内置许多标准的图论算法，节点可为任意数据；支持任意的边值维度，功能丰富，简单易用。</li>
-</ul>
-<h2><span id="texttable">texttable</span><a href="#texttable" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/foutaise/texttable/" target="_blank" rel="noopener">texttable</a></li>
-<li>Python module for creating simple ASCII tables</li>
-</ul>
-<h2><span id="python-goose">python-goose</span><a href="#python-goose" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.chttps://www.baidu.com/link?url=fkS8Msl6v8bwP2uT1hj8XsYvMqXoABRbtLIqlJ2sF9C&amp;wd=&amp;eqid=d0f14d01000057bc000000025c9f00a0om/grangier/python-goose" target="_blank" rel="noopener">python-goose</a></li>
-<li>Goose 用于文章提取器，提取中文内容<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> goose <span class="keyword">import</span> Goose</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> goose.text <span class="keyword">import</span> StopWordsChinese</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>url  = <span class="string">'http://www.bbc.co.uk/zhongwen/simp/chinese_news/2012/12/121210_hongkong_politics.shtml'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>g = Goose(&#123;<span class="string">'stopwords_class'</span>: StopWordsChinese&#125;)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>article = g.extract(url=url)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> article.cleaned_text[:<span class="number">150</span>]</span><br><span class="line">香港行政长官梁振英在各方压力下就其大宅的违章建筑（僭建）问题到立法会接受质询，并向香港民众道歉。</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2><span id="tqdm">tqdm</span><a href="#tqdm" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/tqdm/tqdm" target="_blank" rel="noopener">tqdm</a></li>
-<li>强大、快速、易扩展的 Python 进度条库<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(range(<span class="number">10000</span>)):</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="comment"># 输出结果：</span></span><br><span class="line"><span class="comment"># 76%|████████████████████████████         | 7568/10000 [00:33&lt;00:10, 229.00it/s]</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2><span id="loguru">loguru</span><a href="#loguru" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/Delgan/loguru" target="_blank" rel="noopener">loguru</a></li>
-<li>一个让Python日志变得简单的库<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> loguru</span><br><span class="line">&gt;&gt;&gt;loguru.logger.info(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | INFO     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br><span class="line">&gt;&gt;&gt;loguru.logger.debug(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | DEBUG     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br><span class="line">&gt;&gt;&gt;loguru.logger.error(<span class="string">'test'</span>)</span><br><span class="line"><span class="number">2019</span><span class="number">-03</span><span class="number">-30</span> <span class="number">13</span>:<span class="number">28</span>:<span class="number">48.327</span> | ERROR     | __main__:&lt;module&gt;:<span class="number">1</span> - test</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2><span id="ds-cheatsheets">ds-cheatsheets</span><a href="#ds-cheatsheets" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/FavioVazquez/ds-cheatsheets" target="_blank" rel="noopener">ds-cheatsheets</a></li>
-<li>Python 在数据科学方面使用库的速查表，包含了 Pandas、Jupyter、SQL、Dask 等。虽然都是些基本的 API 调用，但是用来备忘和速查足以。</li>
-</ul>
-<h2><span id="scrapydweb">scrapydweb</span><a href="#scrapydweb" class="header-anchor">#</a></h2><ul>
-<li><a href="https://github.com/my8100/scrapydweb" target="_blank" rel="noopener">scrapydweb</a></li>
-<li>Scrapy 爬虫管理平台，支持：Scrapyd 集群管理、日志可视化、定时任务、邮件通知、移动端 UI </li>
-</ul>
-<h2><span id="xiang-guan-lian-jie">相关连接</span><a href="#xiang-guan-lian-jie" class="header-anchor">#</a></h2><ul>
-<li><a href="https://hellogithub.com/" target="_blank" rel="noopener">HelloGithub</a></li>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 小技巧，实现多行输出</span></span><br><span class="line"><span class="keyword">from</span> IPython.core.interactiveshell <span class="keyword">import</span> InteractiveShell </span><br><span class="line">InteractiveShell.ast_node_interactivity = <span class="string">'all'</span> <span class="comment">#默认为'last'</span></span><br></pre></td></tr></table></figure>
+<h1><span id="basic-numpy">basic numpy</span><a href="#basic-numpy" class="header-anchor">#</a></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建向量</span></span><br><span class="line">vector = np.array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>])</span><br><span class="line"><span class="comment"># 创建矩阵</span></span><br><span class="line">matrix = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>],</span><br><span class="line">                    [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>],</span><br><span class="line">                    [<span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>]])</span><br><span class="line"><span class="comment"># 转置向量</span></span><br><span class="line">vector.T</span><br><span class="line"><span class="comment"># 转置矩阵</span></span><br><span class="line">matrix.T</span><br><span class="line"><span class="comment"># 将矩阵变形为 2x6 矩阵</span></span><br><span class="line">matrix.reshape(<span class="number">2</span>, <span class="number">6</span>)</span><br><span class="line"><span class="comment"># 计算矩阵的逆</span></span><br><span class="line">np.linalg.inv(matrix)</span><br><span class="line"><span class="comment"># 返回对角线元素</span></span><br><span class="line">matrix.diagonal()</span><br><span class="line"><span class="comment"># 创建矩阵的迹 计算矩阵的迹</span></span><br><span class="line">matrix.diagonal().sum()</span><br><span class="line"><span class="comment"># 展开矩阵</span></span><br><span class="line">matrix.flatten()</span><br><span class="line"><span class="comment"># 返回矩阵的秩</span></span><br><span class="line">np.linalg.matrix_rank(matrix)</span><br><span class="line"><span class="comment"># 返回最大元素最小元素</span></span><br><span class="line">np.min(matrix)</span><br><span class="line">np.max(matrix)</span><br><span class="line"><span class="comment">#每列的最大元素</span></span><br><span class="line">np.max(matrix, axis=<span class="number">0</span>)<span class="comment">#列反向</span></span><br><span class="line">每行的最大元素</span><br><span class="line">np.max(matrix, axis=<span class="number">1</span>)<span class="comment">#行反向</span></span><br><span class="line"><span class="comment"># 查看行和列数</span></span><br><span class="line">matrix.shape</span><br><span class="line"><span class="comment"># 查看元素数(行乘列)</span></span><br><span class="line">matrix.size</span><br><span class="line"><span class="comment"># 查看维数</span></span><br><span class="line">matrix.ndim</span><br><span class="line"><span class="comment"># 创建稀疏矩阵</span></span><br><span class="line"><span class="keyword">from</span> scipy <span class="keyword">import</span> sparse</span><br><span class="line"><span class="comment"># 创建矩阵</span></span><br><span class="line">matrix = np.array([[<span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">                [<span class="number">0</span>, <span class="number">1</span>],</span><br><span class="line">                [<span class="number">3</span>, <span class="number">0</span>]])</span><br><span class="line"><span class="comment"># 创建压缩稀疏行(CSR)矩阵</span></span><br><span class="line">matrix_sparse = sparse.csr_matrix(matrix)</span><br><span class="line"></span><br><span class="line"><span class="comment">#将字典转换为矩阵DictVectorizer</span></span><br><span class="line"><span class="comment"># 加载库</span></span><br><span class="line"><span class="keyword">from</span> sklearn.feature_extraction <span class="keyword">import</span> DictVectorizer</span><br><span class="line"><span class="comment"># 我们的数据字典</span></span><br><span class="line">data_dict = [&#123;<span class="string">'Red'</span>:<span class="number">2</span>,<span class="string">'Blue'</span>: <span class="number">4</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">4</span>,<span class="string">'Blue'</span>: <span class="number">3</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">1</span>,<span class="string">'Yellow'</span>: <span class="number">2</span>&#125;,</span><br><span class="line">			&#123;<span class="string">'Red'</span>:<span class="number">2</span>,<span class="string">'Yellow'</span>: <span class="number">2</span>&#125;]</span><br><span class="line"><span class="comment"># 创建 DictVectorizer 对象</span></span><br><span class="line">dictvectorizer = DictVectorizer(sparse=<span class="literal">False</span>)</span><br><span class="line"><span class="comment"># 将字典转换为特征矩阵</span></span><br><span class="line">features = dictvectorizer.fit_transform(data_dict)</span><br><span class="line"><span class="comment"># 查看特征矩阵</span></span><br><span class="line">features</span><br><span class="line"><span class="comment"># 查看特征矩阵的列名</span></span><br><span class="line">dictvectorizer.get_feature_names()</span><br><span class="line"><span class="comment"># ['Blue', 'Red', 'Yellow']</span></span><br><span class="line"><span class="comment"># 返回矩阵的行列式</span></span><br><span class="line">np.linalg.det(matrix)</span><br><span class="line"><span class="comment"># 返回均值</span></span><br><span class="line">np.mean(matrix)</span><br><span class="line"><span class="comment"># 返回方差</span></span><br><span class="line">np.var(matrix)</span><br><span class="line"><span class="comment"># 返回标准差</span></span><br><span class="line">np.std(matrix)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建两个向量</span></span><br><span class="line">vector_a = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br><span class="line">vector_b = np.array([<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line"><span class="comment"># 计算点积</span></span><br><span class="line">np.dot(vector_a, vector_b)</span><br><span class="line"><span class="comment"># 计算点积</span></span><br><span class="line">vector_a @ vector_b</span><br></pre></td></tr></table></figure>
+<h1><span id="ndarray-and-indexing">ndarray and indexing</span><a href="#ndarray-and-indexing" class="header-anchor">#</a></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1D Array</span></span><br><span class="line">a = np.array([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>])</span><br><span class="line">b = np.array((<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>))</span><br><span class="line">c = np.arange(<span class="number">5</span>)<span class="comment">#arange([start,] stop[, step,], dtype=None)</span></span><br><span class="line">d = np.linspace(<span class="number">0</span>, <span class="number">2</span>*np.pi, <span class="number">5</span>)<span class="comment">#np.linspace(start, stop, num=50...)</span></span><br><span class="line">a</span><br><span class="line">b</span><br><span class="line">c</span><br><span class="line">d</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># # MD Array</span></span><br><span class="line">a = np.array([[<span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>],</span><br><span class="line">              [<span class="number">16</span>, <span class="number">17</span>, <span class="number">18</span>, <span class="number">19</span>, <span class="number">20</span>],</span><br><span class="line">              [<span class="number">21</span>, <span class="number">22</span>, <span class="number">23</span>, <span class="number">24</span>, <span class="number">25</span>],</span><br><span class="line">              [<span class="number">26</span>, <span class="number">27</span>, <span class="number">28</span> ,<span class="number">29</span>, <span class="number">30</span>],</span><br><span class="line">              [<span class="number">31</span>, <span class="number">32</span>, <span class="number">33</span>, <span class="number">34</span>, <span class="number">35</span>]])</span><br><span class="line">b = np.arange(<span class="number">25</span>).reshape((<span class="number">-1</span>,<span class="number">5</span>))</span><br><span class="line">a</span><br><span class="line">b</span><br><span class="line">a[<span class="number">2</span>,<span class="number">2</span>]</span><br><span class="line">b[<span class="number">0</span>,<span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">c = a - <span class="number">10</span> <span class="comment"># broadcasting a-np.array([10]*25).reshape(a.shape)</span></span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># MD slicing</span></span><br><span class="line">print(a[<span class="number">0</span>, <span class="number">1</span>:<span class="number">4</span>]) <span class="comment"># &gt;&gt;&gt;[12 13 14]</span></span><br><span class="line">print(a[<span class="number">1</span>:<span class="number">4</span>, <span class="number">0</span>]) <span class="comment"># &gt;&gt;&gt;[16 21 26]</span></span><br><span class="line">print(a[::<span class="number">2</span>,::<span class="number">2</span>]) <span class="comment"># &gt;&gt;&gt;[[11 13 15]</span></span><br><span class="line">                  <span class="comment">#     [21 23 25]</span></span><br><span class="line">                  <span class="comment">#     [31 33 35]]</span></span><br><span class="line">print(a[:, <span class="number">1</span>]) <span class="comment"># &gt;&gt;&gt;[12 17 22 27 32]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Array properties</span></span><br><span class="line">a = np.array([[<span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>],</span><br><span class="line">              [<span class="number">16</span>, <span class="number">17</span>, <span class="number">18</span>, <span class="number">19</span>, <span class="number">20</span>],</span><br><span class="line">              [<span class="number">21</span>, <span class="number">22</span>, <span class="number">23</span>, <span class="number">24</span>, <span class="number">25</span>],</span><br><span class="line">              [<span class="number">26</span>, <span class="number">27</span>, <span class="number">28</span> ,<span class="number">29</span>, <span class="number">30</span>],</span><br><span class="line">              [<span class="number">31</span>, <span class="number">32</span>, <span class="number">33</span>, <span class="number">34</span>, <span class="number">35</span>]])</span><br><span class="line"></span><br><span class="line">print(type(a)) <span class="comment"># &gt;&gt;&gt;&lt;class 'numpy.ndarray'&gt;</span></span><br><span class="line">print(a.dtype) <span class="comment"># &gt;&gt;&gt;int64</span></span><br><span class="line">print(a.size) <span class="comment"># &gt;&gt;&gt;25</span></span><br><span class="line">print(a.shape) <span class="comment"># &gt;&gt;&gt;(5, 5)</span></span><br><span class="line">print(a.itemsize) <span class="comment"># &gt;&gt;&gt;8</span></span><br><span class="line">print(a.ndim) <span class="comment"># &gt;&gt;&gt;2</span></span><br><span class="line">print(a.nbytes) <span class="comment"># &gt;&gt;&gt;200</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Basic Operators</span></span><br><span class="line">a = np.arange(<span class="number">25</span>)</span><br><span class="line">a = a.reshape((<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line"></span><br><span class="line">b = np.array([<span class="number">10</span>, <span class="number">62</span>, <span class="number">1</span>, <span class="number">14</span>, <span class="number">2</span>, <span class="number">56</span>, <span class="number">79</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">45</span>,</span><br><span class="line">              <span class="number">4</span>, <span class="number">92</span>, <span class="number">5</span>, <span class="number">55</span>, <span class="number">63</span>, <span class="number">43</span>, <span class="number">35</span>, <span class="number">6</span>, <span class="number">53</span>, <span class="number">24</span>,</span><br><span class="line">              <span class="number">56</span>, <span class="number">3</span>, <span class="number">56</span>, <span class="number">44</span>, <span class="number">78</span>])</span><br><span class="line">b = b.reshape((<span class="number">5</span>,<span class="number">5</span>))</span><br><span class="line"></span><br><span class="line">print(a + b)</span><br><span class="line">print(a - b)</span><br><span class="line">print(a * b)</span><br><span class="line">print(a / b)</span><br><span class="line">print(a ** <span class="number">2</span>)</span><br><span class="line">print(a &lt; b) </span><br><span class="line">print(a &gt; b)</span><br><span class="line"></span><br><span class="line">print(a.dot(b)) <span class="comment"># 除了 dot() 之外，这些操作符都是对数组进行逐元素运算。</span></span><br><span class="line">np.dot([<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">3</span>]) <span class="comment"># 1*2+2*3</span></span><br><span class="line">np.dot(a[<span class="number">0</span>,:],b[:,<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># dot, sum, min, max, cumsum</span></span><br><span class="line">a = np.arange(<span class="number">10</span>)</span><br><span class="line">a</span><br><span class="line">print(a.sum()) <span class="comment"># &gt;&gt;&gt;45</span></span><br><span class="line">print(a.min()) <span class="comment"># &gt;&gt;&gt;0</span></span><br><span class="line">print(a.max()) <span class="comment"># &gt;&gt;&gt;9</span></span><br><span class="line">print(a.cumsum()) <span class="comment"># &gt;&gt;&gt;[ 0  1  3  6 10 15 21 28 36 45]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Fancy indexing 花式索引</span></span><br><span class="line">a = np.arange(<span class="number">0</span>, <span class="number">100</span>, <span class="number">10</span>)</span><br><span class="line">indices = [<span class="number">1</span>, <span class="number">5</span>, <span class="number">-1</span>]</span><br><span class="line">print(indices)</span><br><span class="line">b = a[indices]</span><br><span class="line">print(a) <span class="comment"># &gt;&gt;&gt;[ 0 10 20 30 40 50 60 70 80 90]</span></span><br><span class="line">print(b) <span class="comment"># &gt;&gt;&gt;[10 50 90]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Boolean masking</span></span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line">a = np.linspace(<span class="number">0</span>, <span class="number">2</span> * np.pi, <span class="number">50</span>)</span><br><span class="line">b = np.sin(a)</span><br><span class="line">plt.plot(a,b)</span><br><span class="line">mask = b &gt;= <span class="number">0</span></span><br><span class="line">mask</span><br><span class="line">plt.plot(a[mask], b[mask], <span class="string">'bo'</span>)</span><br><span class="line">mask = (b &gt;= <span class="number">0</span>) &amp; (a &lt;= np.pi / <span class="number">2</span>)</span><br><span class="line">mask</span><br><span class="line">np.pi / <span class="number">2</span></span><br><span class="line">plt.plot(a[mask], b[mask], <span class="string">'go'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Incomplete Indexing</span></span><br><span class="line">a = np.arange(<span class="number">0</span>, <span class="number">100</span>, <span class="number">10</span>)</span><br><span class="line">a</span><br><span class="line">b = a[:<span class="number">5</span>]</span><br><span class="line">c = a[a &gt;= <span class="number">50</span>]</span><br><span class="line">print(b) <span class="comment"># &gt;&gt;&gt;[ 0 10 20 30 40]</span></span><br><span class="line">print(c) <span class="comment"># &gt;&gt;&gt;[50 60 70 80 90]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Where</span></span><br><span class="line">a = np.arange(<span class="number">0</span>, <span class="number">100</span>, <span class="number">10</span>)</span><br><span class="line">b = np.where(a &lt; <span class="number">50</span>) </span><br><span class="line">c = np.where(a &gt;= <span class="number">50</span>)[<span class="number">0</span>]</span><br><span class="line">a</span><br><span class="line">a[b]</span><br><span class="line">a[c]</span><br><span class="line">c</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">qsort</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> len(arr)&lt;<span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> arr</span><br><span class="line">    pivot=arr[len(arr)//<span class="number">2</span>]</span><br><span class="line">    left=[x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &lt; pivot]</span><br><span class="line">    right=[x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x &gt; pivot]</span><br><span class="line">    middle=[x <span class="keyword">for</span> x <span class="keyword">in</span> arr <span class="keyword">if</span> x == pivot]</span><br><span class="line">    <span class="keyword">return</span> qsort(left)+middle+qsort(right)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qsort(np.random.randint(<span class="number">1</span>,<span class="number">20</span>,<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">qsort_np</span><span class="params">(arr)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> arr.shape[<span class="number">0</span>]&lt;<span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> arr</span><br><span class="line">    pivot=arr[arr.shape[<span class="number">0</span>]//<span class="number">2</span>]</span><br><span class="line">    left=arr[arr&lt;pivot]</span><br><span class="line">    right=arr[arr&gt;pivot]</span><br><span class="line">    middle=arr[arr==pivot]</span><br><span class="line">    <span class="keyword">return</span> np.hstack((left,middle,right))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">qsort_np((np.random.randint(<span class="number">1</span>,<span class="number">20</span>,<span class="number">10</span>)))</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>], [<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>], [<span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>]])</span><br><span class="line">v = np.array([<span class="number">1</span>, <span class="number">0</span>, <span class="number">1</span>])</span><br><span class="line">y = np.empty_like(x)   <span class="comment"># Create an empty matrix with the same shape as x</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># solve求解线性方程组 Ax=b</span></span><br><span class="line">A = np.array([[<span class="number">2</span>,<span class="number">1</span>,<span class="number">-2</span>],[<span class="number">3</span>,<span class="number">0</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">1</span>,<span class="number">-1</span>]])</span><br><span class="line">b = np.transpose(np.array([[<span class="number">-3</span>,<span class="number">5</span>,<span class="number">-2</span>]]))</span><br><span class="line">x = np.linalg.solve(A,b)</span><br><span class="line">A</span><br><span class="line">b</span><br><span class="line">x</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">load</span><span class="params">()</span>:</span></span><br><span class="line">    X = []</span><br><span class="line">    y = []</span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'Housing.csv'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        rdr = csv.reader(f)</span><br><span class="line">        <span class="comment"># Skip the header row</span></span><br><span class="line">        next(rdr)</span><br><span class="line">        <span class="comment"># Read X and y</span></span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> rdr:</span><br><span class="line">            xline = [<span class="number">1.0</span>] <span class="comment">#bias</span></span><br><span class="line">            <span class="keyword">for</span> s <span class="keyword">in</span> line[:<span class="number">-1</span>]:</span><br><span class="line">                xline.append(float(s))</span><br><span class="line">            X.append(xline)</span><br><span class="line">            y.append(float(line[<span class="number">-1</span>]))</span><br><span class="line">    <span class="keyword">return</span> (X,y)</span><br><span class="line">X0,y0=load()</span><br><span class="line">X0,y0=np.array(X0),np.array(y0)</span><br><span class="line">X0.shape</span><br><span class="line">y0.shape</span><br><span class="line"></span><br><span class="line">d = len(X0)<span class="number">-10</span></span><br><span class="line">X = np.array(X0[:d])</span><br><span class="line">y = np.transpose(np.array([y0[:d]]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute beta</span></span><br><span class="line">Xt = np.transpose(X)</span><br><span class="line">XtX = np.dot(Xt,X)</span><br><span class="line">Xty = np.dot(Xt,y)</span><br><span class="line">beta = np.linalg.solve(XtX,Xty)</span><br><span class="line">print(beta)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Make predictions for the last 10 rows in the data set</span></span><br><span class="line"><span class="keyword">for</span> data,actual <span class="keyword">in</span> zip(X0[d:],y0[d:]):</span><br><span class="line">    x = np.array([data])</span><br><span class="line">    prediction = np.dot(x,beta)</span><br><span class="line">    print(<span class="string">'prediction = '</span>+str(prediction[<span class="number">0</span>,<span class="number">0</span>])+<span class="string">' actual = '</span>+str(actual))</span><br></pre></td></tr></table></figure>
+<h1><span id="zi-liao">资料</span><a href="#zi-liao" class="header-anchor">#</a></h1><ul>
+<li><a href="https://hackr.io/tutorials/learn-python" target="_blank" rel="noopener">learn-python</a></li>
+<li><a href="http://cs231n.github.io/python-numpy-tutorial/" target="_blank" rel="noopener">cs231 python</a></li>
+<li><a href="https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb" target="_blank" rel="noopener">cs228 python</a></li>
+<li><a href="https://docs.scipy.org/doc/" target="_blank" rel="noopener">scipy</a></li>
+<li><a href="https://www.numpy.org.cn/" target="_blank" rel="noopener">numpy</a></li>
+<li><a href="https://github.com/rougier/numpy-100" target="_blank" rel="noopener">100 numpy practice</a></li>
 </ul>
 
       
@@ -688,9 +637,9 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/03/30/python-好用的包/">Python | 好用的包</a></p>
+  <p><span>本文标题:</span><a href="/2019/03/30/python_numpy/">Numpy | 基本用法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Jhai.Dai 的个人博客">Jhai.Dai</a></p>
-  <p><span>发布时间:</span>2019年03月30日 - 13:03</p>
+  <p><span>发布时间:</span>2019年03月30日 - 20:03</p>
   <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 </a> 许可协议。转载请注明出处！</p>
       
     </div>
@@ -743,9 +692,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Tools/" rel="tag"><i class="fa fa-tag"></i> Tools</a>
-          
             <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+            <a href="/tags/Numpy/" rel="tag"><i class="fa fa-tag"></i> Numpy</a>
           
         </div>
       
@@ -798,8 +747,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/29/Graph Convolution over Pruned Dependency Trees Improves Relation Extraction/" rel="next" title="Paper | Graph Convolution over Pruned Dependency Trees Improves Relation Extraction">
-                <i class="fa fa-chevron-left"></i> Paper | Graph Convolution over Pruned Dependency Trees Improves Relation Extraction
+              <a href="/2019/03/30/chrome_plugins/" rel="next" title="Chrome | 好用的插件">
+                <i class="fa fa-chevron-left"></i> Chrome | 好用的插件
               </a>
             
           </div>
@@ -808,8 +757,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/30/chrome-好用的插件/" rel="prev" title="Chrome | 好用的插件">
-                Chrome | 好用的插件 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/30/numpy_data_analysis/" rel="prev" title="Numpy | 数据分析练习">
+                Numpy | 数据分析练习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -885,7 +834,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -918,7 +867,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -957,7 +910,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1041,7 +998,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.1.</span> <span class="nav-text">Matplotlib#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.2.</span> <span class="nav-text">Seaborn#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.3.</span> <span class="nav-text">Plotly#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.4.</span> <span class="nav-text">PyCharts#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.5.</span> <span class="nav-text">Dash#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.6.</span> <span class="nav-text">graphviz#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.7.</span> <span class="nav-text">NN-SVG#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.8.</span> <span class="nav-text">knockknock#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.9.</span> <span class="nav-text">networkx#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.10.</span> <span class="nav-text">texttable#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.11.</span> <span class="nav-text">python-goose#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.12.</span> <span class="nav-text">tqdm#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.13.</span> <span class="nav-text">loguru#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.14.</span> <span class="nav-text">ds-cheatsheets#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.15.</span> <span class="nav-text">scrapydweb#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.16.</span> <span class="nav-text">相关连接#</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">basic numpy#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">ndarray and indexing#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">资料#</span></a></li></ol></div>
             
 
           </div>
@@ -1072,7 +1029,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018-2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </span>
