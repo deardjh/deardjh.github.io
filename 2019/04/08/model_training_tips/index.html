@@ -133,16 +133,18 @@
 
 
 
-  <meta name="description" content="山不在高有仙则灵,水不在深有龙则灵">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jhai.Dai">
-<meta property="og:url" content="https://deardjh.github.io/categories/网站服务/index.html">
+  <meta name="description" content="目录#    数据 数据扩增 数据划分   预处理 模型训练 运行时设置可见GPU CUDA_VISIBLE_DEVICES 训练技巧 模型参数初始化 超参数调试 params 观察模型参数更新幅度(程度) 批处理大小 batch_size 学习率 learning_rate 偏置与方差 bias &amp;amp; variance 查看GPU状态 gpustat   优化算法 性能提升   测评 参考">
+<meta name="keywords" content="Deep Learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DL | 模型训练技巧">
+<meta property="og:url" content="https://deardjh.github.io/2019/04/08/model_training_tips/index.html">
 <meta property="og:site_name" content="Jhai.Dai">
-<meta property="og:description" content="山不在高有仙则灵,水不在深有龙则灵">
+<meta property="og:description" content="目录#    数据 数据扩增 数据划分   预处理 模型训练 运行时设置可见GPU CUDA_VISIBLE_DEVICES 训练技巧 模型参数初始化 超参数调试 params 观察模型参数更新幅度(程度) 批处理大小 batch_size 学习率 learning_rate 偏置与方差 bias &amp;amp; variance 查看GPU状态 gpustat   优化算法 性能提升   测评 参考">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-04-10T14:36:11.346Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jhai.Dai">
-<meta name="twitter:description" content="山不在高有仙则灵,水不在深有龙则灵">
+<meta name="twitter:title" content="DL | 模型训练技巧">
+<meta name="twitter:description" content="目录#    数据 数据扩增 数据划分   预处理 模型训练 运行时设置可见GPU CUDA_VISIBLE_DEVICES 训练技巧 模型参数初始化 超参数调试 params 观察模型参数更新幅度(程度) 批处理大小 batch_size 学习率 learning_rate 偏置与方差 bias &amp;amp; variance 查看GPU状态 gpustat   优化算法 性能提升   测评 参考">
 
 
 
@@ -151,7 +153,7 @@
 
 
 
-  <link rel="canonical" href="https://deardjh.github.io/categories/网站服务/">
+  <link rel="canonical" href="https://deardjh.github.io/2019/04/08/model_training_tips/">
 
 
 
@@ -161,7 +163,7 @@
   };
 </script>
 
-  <title>分类: 网站服务 | Jhai.Dai</title>
+  <title>DL | 模型训练技巧 | Jhai.Dai</title>
   
 
 
@@ -209,7 +211,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -285,7 +287,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -399,83 +401,398 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>网站服务<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://deardjh.github.io/2019/04/08/model_training_tips/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jhai.Dai">
+      <meta itemprop="description" content="山不在高有仙则灵,水不在深有龙则灵">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jhai.Dai">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/04/03/nginx_reverseproxy/" itemprop="url">
-            
-              <span itemprop="name">Nginx | 反向代理</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">DL | 模型训练技巧
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-03T15:55:03+08:00" content="2019-04-03`">
-          04-03
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+        
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-08` 20:01:03" itemprop="dateCreated datePublished" datetime="2019-04-08T20:01:03+08:00">2019-04-08`</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-10` 22:36:11" itemprop="dateModified" datetime="2019-04-10T22:36:11+08:00">2019-04-10`</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/深度学习/" itemprop="url" rel="index"><span itemprop="name">深度学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+            <span id="/2019/04/08/model_training_tips/" class="leancloud_visitors" data-flag-title="DL | 模型训练技巧">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">2.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">2 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1><span id="mu-lu">目录</span><a href="#mu-lu" class="header-anchor">#</a></h1><div class="toc">
+
+<!-- toc -->
+<ul>
+<li><a href="#shu-ju">数据</a><ul>
+<li><a href="#shu-ju-kuo-zeng">数据扩增</a></li>
+<li><a href="#shu-ju-hua-fen">数据划分</a></li>
+</ul>
+</li>
+<li><a href="#yu-chu-li">预处理</a></li>
+<li><a href="#mo-xing-xun-lian">模型训练</a><ul>
+<li><a href="#yun-xing-shi-she-zhi-ke-jian-gpu-cuda-visible-devices">运行时设置可见GPU CUDA_VISIBLE_DEVICES</a></li>
+<li><a href="#xun-lian-ji-qiao">训练技巧</a></li>
+<li><a href="#mo-xing-can-shu-chu-shi-hua">模型参数初始化</a></li>
+<li><a href="#chao-can-shu-diao-shi-params">超参数调试 params</a></li>
+<li><a href="#guan-cha-mo-xing-can-shu-geng-xin-fu-du-cheng-du">观察模型参数更新幅度(程度)</a></li>
+<li><a href="#pi-chu-li-da-xiao-batch-size">批处理大小 batch_size</a></li>
+<li><a href="#xue-xi-lu-learning-rate">学习率 learning_rate</a></li>
+<li><a href="#pian-zhi-yu-fang-chai-bias-variance">偏置与方差 bias &amp; variance</a></li>
+<li><a href="#cha-kan-gpu-zhuang-tai-gpustat">查看GPU状态 gpustat</a></li>
+</ul>
+</li>
+<li><a href="#you-hua-suan-fa">优化算法</a><ul>
+<li><a href="#xing-neng-ti-sheng">性能提升</a></li>
+</ul>
+</li>
+<li><a href="#ce-ping">测评</a></li>
+<li><a href="#can-kao">参考</a></li>
+</ul>
+<!-- tocstop -->
+</div>
+
+<h1><span id="shu-ju">数据</span><a href="#shu-ju" class="header-anchor">#</a></h1><h2><span id="shu-ju-kuo-zeng">数据扩增</span><a href="#shu-ju-kuo-zeng" class="header-anchor">#</a></h2><h2><span id="shu-ju-hua-fen">数据划分</span><a href="#shu-ju-hua-fen" class="header-anchor">#</a></h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">数据总量在十万级别</span><br><span class="line">    train,test = <span class="number">0.7</span>,<span class="number">0.3</span></span><br><span class="line">    train,dev,test =  <span class="number">0.6</span>,<span class="number">0.2</span>,<span class="number">0.2</span></span><br><span class="line">    确保分布大致相同</span><br><span class="line">数据总量在百万级别</span><br><span class="line">    通常会倾向与划分更小比例的数据到devset和testset。</span><br><span class="line">    划分devset的目标是校验模型并且调整以及选择一个最佳的模型；</span><br><span class="line">    划分test set的目标是评估最优模型的性能。所以，不必要划分太多的数据到这两个数据集上</span><br><span class="line">    分别划分dev,test=<span class="number">10000</span>,<span class="number">10000</span> 就足够了</span><br><span class="line">    确保分布大致相同</span><br></pre></td></tr></table></figure>
+<h1><span id="yu-chu-li">预处理</span><a href="#yu-chu-li" class="header-anchor">#</a></h1><h1><span id="mo-xing-xun-lian">模型训练</span><a href="#mo-xing-xun-lian" class="header-anchor">#</a></h1><h2><span id="yun-xing-shi-she-zhi-ke-jian-gpu-cuda-visible-devices">运行时设置可见GPU CUDA_VISIBLE_DEVICES</span><a href="#yun-xing-shi-she-zhi-ke-jian-gpu-cuda-visible-devices" class="header-anchor">#</a></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">CUDA_VISIBLE_DEVICES=1  只有编号为1的GPU对程序是可见的，在代码中gpu[0]指的就是这块儿GPU</span><br><span class="line">CUDA_VISIBLE_DEVICES=0,2,3  只有编号为0,2,3的GPU对程序是可见的，在代码中gpu[0]指的是第0块儿，gpu[1]指的是第2块儿，gpu[2]指的是第3块儿</span><br><span class="line">CUDA_VISIBLE_DEVICES=2,0,3  只有编号为0,2,3的GPU对程序是可见的，但是在代码中gpu[0]指的是第2块儿，gpu[1]指的是第0块儿，gpu[2]指的是第3块儿</span><br></pre></td></tr></table></figure>
+<h2><span id="xun-lian-ji-qiao">训练技巧</span><a href="#xun-lian-ji-qiao" class="header-anchor">#</a></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>先训练一小部分数据来验证模型有没有异常，确认模型可以对这小部分数据过拟合，即对这小部分数据的预测达到<span class="number">100</span>%准确，这样的话就验证了我们的反向传播算法等等是正确的，然后就可以开始训练大量数据。如果过拟合都无法做到，更别提大量数据下的拟合了。</span><br><span class="line"><span class="number">2.</span>绘制训练过程中的损失函数，以及训练及验证数据集的精确度</span><br></pre></td></tr></table></figure>
+<h2><span id="mo-xing-can-shu-chu-shi-hua">模型参数初始化</span><a href="#mo-xing-can-shu-chu-shi-hua" class="header-anchor">#</a></h2><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>.All Zero Initialization</span><br><span class="line"><span class="number">2</span>.Initialization with <span class="built_in">Small</span> Random Numbers</span><br><span class="line"><span class="number">3</span>.Calibrating the Variances</span><br><span class="line">    w = np.random.randn(<span class="built_in">n</span>) / <span class="built_in">sqrt</span>(<span class="built_in">n</span>) # calibrating the variances with <span class="number">1</span>/<span class="built_in">sqrt</span>(<span class="built_in">n</span>)</span><br><span class="line"><span class="number">4</span>.Current Recommendation</span><br><span class="line">    w = np.random.randn(<span class="built_in">n</span>) * <span class="built_in">sqrt</span>(<span class="number">2.0</span>/<span class="built_in">n</span>) # current recommendation</span><br></pre></td></tr></table></figure>
+<h2><span id="chao-can-shu-diao-shi-params">超参数调试 params</span><a href="#chao-can-shu-diao-shi-params" class="header-anchor">#</a></h2><p>可以先设置较大步数，然后找一个表现比较好的小区间，这样一步步进行，区间越来越窄，最后选出表现最好的参数</p>
+<h2><span id="guan-cha-mo-xing-can-shu-geng-xin-fu-du-cheng-du">观察模型参数更新幅度(程度)</span><a href="#guan-cha-mo-xing-can-shu-geng-xin-fu-du-cheng-du" class="header-anchor">#</a></h2><p>权值增量和当前权值的比值不能太大或太小，一般比值为1e-3左右比较合理<br>太大的话考虑降低学习率；太小的话考虑增加学习率。</p>
+<h2><span id="pi-chu-li-da-xiao-batch-size">批处理大小 batch_size</span><a href="#pi-chu-li-da-xiao-batch-size" class="header-anchor">#</a></h2><p>一般取值32,64,128,256…<br>如果数据规模&lt;1000，可以全部用于梯度下降，用批梯度的目的就是为了加快训练速度，用全梯度下降是最有效的训练方式，只是反向传播一次需要很久的时间，训练起来很慢;<br>如果你的训练类别比较的多，建议batch_size不要选择太小，上千的类别数，batch_size应该&gt;=128，不然会震荡严重。<br>batch_size=all, batch learning<br>batch_size=small, mini batch learning<br>batch_size=1, online learning</p>
+<h2><span id="xue-xi-lu-learning-rate">学习率 learning_rate</span><a href="#xue-xi-lu-learning-rate" class="header-anchor">#</a></h2><p>根据网络规模和loss下降速度来选择学习率<br>一般是0.01,0.001,0.0001,0.00001…<br>3-5层的网络，学习率&lt;1*e-5，不然下降过快导致震荡；<br>刚开始可以任意选一个学习率，观察loss的下降速度，如果下降很快，就减小学习率；<br>当loss收敛后，如果loss很低且准确率也高，则结束训练<br>基本原则：网络结构复杂，学习率不能太低，防止梯度消失；</p>
+<h2><span id="pian-zhi-yu-fang-chai-bias-amp-variance">偏置与方差 bias &amp; variance</span><a href="#pian-zhi-yu-fang-chai-bias-amp-variance" class="header-anchor">#</a></h2><ul>
+<li>模型好坏的极限是由数据的质量决定的，而算法的性能只能让模型无限逼近这个极限。<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">优化bias</span><br><span class="line">    -<span class="ruby"> 网络更大</span></span><br><span class="line"><span class="ruby">    - 训练更久</span></span><br><span class="line"><span class="ruby">    - 算法更优</span></span><br><span class="line"><span class="ruby">    - 换一个网络结构</span></span><br><span class="line"><span class="ruby">优化variance</span></span><br><span class="line"><span class="ruby">    - 数据更多</span></span><br><span class="line"><span class="ruby">    - Dropout</span></span><br><span class="line"><span class="ruby">    - 正则化</span></span><br><span class="line"><span class="ruby">    - 换一个网络结构</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2><span id="cha-kan-gpu-zhuang-tai-gpustat">查看GPU状态 gpustat</span><a href="#cha-kan-gpu-zhuang-tai-gpustat" class="header-anchor">#</a></h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.nvidia-smi</span><br><span class="line">2.gpustat [pip install gpustat]</span><br><span class="line">3.实时监控</span><br><span class="line">3.1 watch nvidia-smi</span><br><span class="line">3.2 watch --color -n1 gpustat [推荐]</span><br></pre></td></tr></table></figure>
+<h1><span id="you-hua-suan-fa">优化算法</span><a href="#you-hua-suan-fa" class="header-anchor">#</a></h1><h2><span id="xing-neng-ti-sheng">性能提升</span><a href="#xing-neng-ti-sheng" class="header-anchor">#</a></h2><figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>从数据上提升性能</span><br><span class="line"><span class="number">2.</span>从算法上提升性能</span><br><span class="line"><span class="number">3.</span>从算法调优上提升性能</span><br><span class="line"><span class="number">4.</span>从模型融合上提升性能</span><br><span class="line">性能提升的力度按上表的顺序从上到下依次递减</span><br></pre></td></tr></table></figure>
+<h1><span id="ce-ping">测评</span><a href="#ce-ping" class="header-anchor">#</a></h1><h1><span id="can-kao">参考</span><a href="#can-kao" class="header-anchor">#</a></h1><ul>
+<li><a href="http://bigdata.51cto.com/art/201610/519753.htm?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="noopener">深度学习性能提升的诀窍</a></li>
+</ul>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <p><span>本文标题:</span><a href="/2019/04/08/model_training_tips/">DL | 模型训练技巧</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 Jhai.Dai 的个人博客">Jhai.Dai</a></p>
+  <p><span>发布时间:</span>2019年04月08日 - 20:04</p>
+  <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 </a> 许可协议。转载请注明出处！</p>
+      
+    </div>
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div></div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Jhai.Dai 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:20px;">-------------&nbsp;本文结束&nbsp;&nbsp;<i class="fa fa-paw"></i>&nbsp;&nbsp;感谢阅读&nbsp;-------------</div>
+    
+</div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Deep-Learning/" rel="tag"><i class="fa fa-tag"></i> Deep Learning</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+              <div>
+                
+
+<script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css">
+
+
+  
+
+
+<div class="likely">
+	
+ 	 	<div class="twitter">Tweet</div>
+	
+ 	 	<div class="facebook">Share</div>
+	
+ 	 	<div class="linkedin">Link</div>
+	
+</div>
+
+              </div>
+            
+            
+            
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/08/pythonic/" rel="next" title="Python | 更加Pythonic的编程习惯">
+                <i class="fa fa-chevron-left"></i> Python | 更加Pythonic的编程习惯
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </div></article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="gitalk-container">
+    </div>
+
+  
+
+
 
         </div>
         
@@ -495,8 +812,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -666,6 +992,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">数据#</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">数据扩增#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">数据划分#</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">预处理#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">模型训练#</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">运行时设置可见GPU CUDA_VISIBLE_DEVICES#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">训练技巧#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.3.</span> <span class="nav-text">模型参数初始化#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.4.</span> <span class="nav-text">超参数调试 params#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.5.</span> <span class="nav-text">观察模型参数更新幅度(程度)#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.6.</span> <span class="nav-text">批处理大小 batch_size#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.7.</span> <span class="nav-text">学习率 learning_rate#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.8.</span> <span class="nav-text">偏置与方差 bias &amp; variance#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.9.</span> <span class="nav-text">查看GPU状态 gpustat#</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">优化算法#</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.1.</span> <span class="nav-text">性能提升#</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">测评#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">参考#</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
       
       
@@ -847,6 +1190,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -862,6 +1209,37 @@
 
   
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'd32891a11324daaeff78',
+    clientSecret: 'fb8a3576fc7b481720daa50e7b6f2cb54696d1ee',
+    repo: 'deardjh.github.io',
+    owner: 'deardjh',
+    admin: ['deardjh'],
+    id: md5(location.pathname),
+    
+      language: window.navigator.language || window.navigator.userLanguage,
+    
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
 
 
   
@@ -1193,38 +1571,37 @@
   
   <script>
     
-    function showTime(Counter) {
-      var entries = [];
+    function addCount(Counter) {
       var $visitors = $('.leancloud_visitors');
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
 
-      $visitors.each(function() {
-        entries.push( $(this).attr('id').trim() );
-      });
-
-      Counter('get', '/classes/Counter', { where: JSON.stringify({ url: { '$in': entries } }) })
+      Counter('get', '/classes/Counter', { where: JSON.stringify({ url }) })
         .done(function({ results }) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.url;
-            var time = item.time;
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
+          if (results.length > 0) {
+            var counter = results[0];
+            
+            Counter('put', '/classes/Counter/' + counter.objectId, JSON.stringify({ time: { '__op': 'Increment', 'amount': 1 } }))
+            
+              .done(function() {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.time + 1);
+              })
+            
+              .fail(function ({ responseJSON }) {
+                console.log('Failed to save Visitor num, with error message: ' + responseJSON.error);
+              })
+          } else {
+            
+              Counter('post', '/classes/Counter', JSON.stringify({ title: title, url: url, time: 1 }))
+                .done(function() {
+                  var $element = $(document.getElementById(url));
+                  $element.find('.leancloud-visitors-count').text(1);
+                })
+                .fail(function() {
+                  console.log('Failed to create');
+                });
+            
           }
         })
         .fail(function ({ responseJSON }) {
@@ -1249,9 +1626,7 @@
             });
           };
           
-            if ($('.post-title-link').length >= 1) {
-              showTime(Counter);
-            }
+            addCount(Counter);
           
         });
     });
