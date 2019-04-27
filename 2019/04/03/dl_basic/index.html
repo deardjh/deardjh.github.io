@@ -133,18 +133,18 @@
 
 
 
-  <meta name="description" content="目录#    基础 进阶 资料      基础#标量scalar：一个单独的数字，向量vector：一列数字，一位数组，矩阵matrix：n列数字，二维数组，张量tensor：若干维数组单位矩阵identity，对角矩阵diagonal，行列式determinant，秩rank，迹trace，转置transpose，逆矩阵inverse，对称矩阵，可逆矩阵，奇异矩阵singular和非奇异矩阵，特">
+  <meta name="description" content="深度学习中的参数初始化对模型收敛速度和模型质量有重要影响">
 <meta name="keywords" content="Deep Learning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="DL | 基础概念">
+<meta property="og:title" content="DL | 参数初始化">
 <meta property="og:url" content="https://deardjh.github.io/2019/04/03/dl_basic/index.html">
 <meta property="og:site_name" content="Jhai.Dai">
-<meta property="og:description" content="目录#    基础 进阶 资料      基础#标量scalar：一个单独的数字，向量vector：一列数字，一位数组，矩阵matrix：n列数字，二维数组，张量tensor：若干维数组单位矩阵identity，对角矩阵diagonal，行列式determinant，秩rank，迹trace，转置transpose，逆矩阵inverse，对称矩阵，可逆矩阵，奇异矩阵singular和非奇异矩阵，特">
+<meta property="og:description" content="深度学习中的参数初始化对模型收敛速度和模型质量有重要影响">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-04T07:10:53.720Z">
+<meta property="og:updated_time" content="2019-04-27T08:33:12.950Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DL | 基础概念">
-<meta name="twitter:description" content="目录#    基础 进阶 资料      基础#标量scalar：一个单独的数字，向量vector：一列数字，一位数组，矩阵matrix：n列数字，二维数组，张量tensor：若干维数组单位矩阵identity，对角矩阵diagonal，行列式determinant，秩rank，迹trace，转置transpose，逆矩阵inverse，对称矩阵，可逆矩阵，奇异矩阵singular和非奇异矩阵，特">
+<meta name="twitter:title" content="DL | 参数初始化">
+<meta name="twitter:description" content="深度学习中的参数初始化对模型收敛速度和模型质量有重要影响">
 
 
 
@@ -163,7 +163,7 @@
   };
 </script>
 
-  <title>DL | 基础概念 | Jhai.Dai</title>
+  <title>DL | 参数初始化 | Jhai.Dai</title>
   
 
 
@@ -438,7 +438,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">DL | 基础概念
+          <h1 class="post-title" itemprop="name headline">DL | 参数初始化
 
               
             
@@ -482,7 +482,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-04` 15:10:53" itemprop="dateModified" datetime="2019-04-04T15:10:53+08:00">2019-04-04`</time>
+                <time title="修改时间：2019-04-27` 16:33:12" itemprop="dateModified" datetime="2019-04-27T16:33:12+08:00">2019-04-27`</time>
               
             
           </span>
@@ -514,7 +514,7 @@
 
           
           
-            <span id="/2019/04/03/dl_basic/" class="leancloud_visitors" data-flag-title="DL | 基础概念">
+            <span id="/2019/04/03/dl_basic/" class="leancloud_visitors" data-flag-title="DL | 参数初始化">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -566,6 +566,8 @@
           
 
           
+            <div class="post-description">深度学习中的参数初始化对模型收敛速度和模型质量有重要影响</div>
+          
 
         </div>
       </header>
@@ -584,20 +586,42 @@
 
 <!-- toc -->
 <ul>
-<li><a href="#ji-chu">基础</a></li>
-<li><a href="#jin-jie">进阶</a></li>
+<li><a href="#chu-shi-hua-wei-0">初始化为0</a></li>
+<li><a href="#sui-ji-chu-shi-hua">随机初始化</a></li>
+<li><a href="#xavier">Xavier</a></li>
+<li><a href="#he-he-kai-ming">He(何恺明)</a></li>
 <li><a href="#zi-liao">资料</a></li>
 </ul>
 <!-- tocstop -->
 </div>
 
-
-<h1><span id="ji-chu">基础</span><a href="#ji-chu" class="header-anchor">#</a></h1><p>标量scalar：一个单独的数字，向量vector：一列数字，一位数组，矩阵matrix：n列数字，二维数组，张量tensor：若干维数组<br>单位矩阵identity，对角矩阵diagonal，行列式determinant，秩rank，迹trace，转置transpose，逆矩阵inverse，对称矩阵，可逆矩阵，奇异矩阵singular和非奇异矩阵，特征值和特征向量，范数（向量范数和矩阵范数）<br>不确定性，随机变量，概率，频率，联合概率，条件概率，，边缘概率，链式法则，抽样，分布，，高斯分布，概率密度函数，累积分布函数，数学期望，方差，协方差，信息熵，相对熵，交叉熵，KL散度<br>有向图，无向图，因式分解，数列sequence，极限limit，导数derivative，微分differential，积分integral<br>目标函数，代价函数（损失函数、误差函数），临界点（驻点），极值点，最优解，梯度，鞍点，</p>
-<h1><span id="jin-jie">进阶</span><a href="#jin-jie" class="header-anchor">#</a></h1><p>向量空间，线性相关，线性无关，协方差矩阵，矩阵分解（QR，SVG，LU，谱分解），伪逆<br>数值溢出，条件数，病态条件数<br>Jacobian矩阵（偏导数矩阵），Hessian矩阵（二阶导数构成的矩阵，实对称矩阵），牛顿法迭代最优算法，一阶优化算法，二阶优化算法，凸优化，非凸优化，拉格朗日乘数法（约数优化，等式约束，不等式约束，KKT）<br>分类：对给定输入指定属于k类中某一类<br>回归：对给定输入预测数值<br>机器翻译：输入是一种语言的符号序列，输出是另一张语言的符号序列<br>异常检测：在给定一组事件或对象中筛选，标记不正常或者非典型的个体<br>合成和采样：程序生成一些和训练数据相似的新样本<br>缺失值填补：算法填补实例中缺失部分<br>去噪：噪声破坏了纯净样本，得到污染样本，算法根据污染样本预测干净的样本<br>密度估计：学习采样空间的概率密度或者概率分布<br>表示学习：使用机器学习算法挖掘表示本身，而不仅仅把表示映射到输出，代表算法：自编码器<br>变差因素：用于分离观测数据的因素或者某个量<br>数据集：训练集，测试机，验证集（开发集），划分方法，比例，数据要求<br>训练目标，模型评估，测试方法，模型容量，模型调整，超参数设置，模型选择（奥卡姆剃刀），正则化<br>偏差与方差，点估计（为一些感兴趣的量提供单个“最优”预测）<br>偏差度量着离真实函数或参数的误差期望。而方差度量着数据上任意特定采样可能导致的估计期望的偏差。</p>
-<p>最大似然估计（最大化似然函数MLE）<br>贝叶斯估计（贝叶斯准则）<br>最大后验概率（MAP）</p>
-<p>监督学习：分类，回归<br>无监督学习：表示学习，聚类，降维<br>维数灾难，局部不变性和平滑正则化<br>流形学习，流形 (manifold) 指连接在一起的区域</p>
-<p>深度前馈网络 DNN（多层感知机 MLP）</p>
+<p>深度学习模型训练的过程本质是对参数进行迭代更新，这需要每个参数有相应的初始值。<br>对一些简单的机器学习模型，或当油画函数是凸函数时，使用0初始化或者随机初始化比较有效。<br>对于深度学习而言，非线性函数被疯狂叠加，产生非凸函数，如何选择参数初始值便成为一个值得探讨的问题 — 其本质是初始参数的选择应使得目标函数便于被优化。</p>
+<h1><span id="chu-shi-hua-wei-0">初始化为0</span><a href="#chu-shi-hua-wei-0" class="header-anchor">#</a></h1><ul>
+<li>适合简单模型比如:线性回归,logistic回归</li>
+<li>如果所有的参数都是0，那么所有神经元的输出都将是相同的，那在back propagation的时候同一层内所有神经元的行为也是相同的 — gradient相同，weight update也相同。</li>
+</ul>
+<h1><span id="sui-ji-chu-shi-hua">随机初始化</span><a href="#sui-ji-chu-shi-hua" class="header-anchor">#</a></h1><ul>
+<li>适合层数不多的网络</li>
+<li>随着层数增加,梯度会变得很小,使得网络参数更新困难</li>
+</ul>
+<h1><span id="xavier">Xavier</span><a href="#xavier" class="header-anchor">#</a></h1><ul>
+<li>可以解决上随机初始化问题,但是对tanh是有效的,对于Relu依然有问题</li>
+<li>Xavier初始化的基本思想是保持输入和输出的方差一致，这样就避免了所有输出值都趋向于0。<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">W = tf.Variable(<span class="built_in">np</span>.<span class="built_in">random</span>.randn(node_in, node_out)) / <span class="built_in">np</span>.<span class="built_in">sqrt</span>(node_in)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1><span id="he-he-kai-ming">He(何恺明)</span><a href="#he-he-kai-ming" class="header-anchor">#</a></h1><ul>
+<li>在Relu中推荐使用Xavier Initialization的变种He Initialization(何恺明)<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as <span class="built_in">np</span></span><br><span class="line">W = <span class="built_in">np</span>.<span class="built_in">random</span>.randn(node_in, node_out) / <span class="built_in">np</span>.<span class="built_in">sqrt</span>(node_in / <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>使用Batch Normalization Layer可以有效降低深度网络对weight初始化的依赖：<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import tensorflow as tf</span><br><span class="line"><span class="comment"># put this before nonlinear transformation</span></span><br><span class="line">layer = tf.contrib.layers.batch_norm(layer, <span class="attribute">center</span>=<span class="literal">True</span>, <span class="attribute">scale</span>=<span class="literal">True</span>,is_training=True)</span><br></pre></td></tr></table></figure></p>
+<p>Batch Normalization Layer 可以削弱bad initialization的影响，其基本思想是：If you want it, just make it! 我们想要的是在非线性变换之前，输出值应该有比较好的分布（例如高斯分布），以便于反向传播计算梯度，更新参数。Batch Normalization将输出值强行做一次高斯归一化和线性变换.</p>
 <h1><span id="zi-liao">资料</span><a href="#zi-liao" class="header-anchor">#</a></h1><ul>
+<li><p>[网络参数初始化(<a href="https://blog.csdn.net/u012328159/article/details/80025785" target="_blank" rel="noopener">https://blog.csdn.net/u012328159/article/details/80025785</a>)</p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/25110150" target="_blank" rel="noopener">聊一聊深度学习的weight initialization</a></p>
+</li>
+</ul>
+<ul>
 <li><a href="https://mml-book.github.io/" target="_blank" rel="noopener">mml-book</a></li>
 <li><a href="https://exacity.github.io/deeplearningbook-chinese/" target="_blank" rel="noopener">Deep Learning 中文版</a></li>
 <li><a href="https://mp.weixin.qq.com/s/1UvAIAs3luijzd0zJ4Kf0A" target="_blank" rel="noopener">机器学习算法优缺点对比及选择（汇总篇）</a></li>
@@ -623,7 +647,7 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/04/03/dl_basic/">DL | 基础概念</a></p>
+  <p><span>本文标题:</span><a href="/2019/04/03/dl_basic/">DL | 参数初始化</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Jhai.Dai 的个人博客">Jhai.Dai</a></p>
   <p><span>发布时间:</span>2019年04月03日 - 22:04</p>
   <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 </a> 许可协议。转载请注明出处！</p>
@@ -818,7 +842,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -855,7 +879,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -898,7 +924,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">16</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -982,7 +1014,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">基础#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">进阶#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">资料#</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">目录#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">初始化为0#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">随机初始化#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Xavier#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">He(何恺明)#</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">资料#</span></a></li></ol></div>
             
 
           </div>
