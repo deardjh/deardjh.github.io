@@ -141,7 +141,7 @@
 <meta property="og:site_name" content="Jhai.Dai">
 <meta property="og:description" content="目录#    Intro Pre-trained models Fine-tuning with BERT Sentence (and sentence-pair) classification tasks   Related     Intro#《Pre-training of Deep Bidirectional Transformers for Language Understanding》">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-15T14:30:07.906Z">
+<meta property="og:updated_time" content="2019-04-27T08:44:07.061Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NLP | BERT">
 <meta name="twitter:description" content="目录#    Intro Pre-trained models Fine-tuning with BERT Sentence (and sentence-pair) classification tasks   Related     Intro#《Pre-training of Deep Bidirectional Transformers for Language Understanding》">
@@ -465,12 +465,24 @@
                 
               
 
-              <time title="创建时间：2019-04-15` 21:54:18 / 修改时间：22:30:07" itemprop="dateCreated datePublished" datetime="2019-04-15T21:54:18+08:00">2019-04-15`</time>
+              <time title="创建时间：2019-04-15` 21:54:18" itemprop="dateCreated datePublished" datetime="2019-04-15T21:54:18+08:00">2019-04-15`</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-27` 16:44:07" itemprop="dateModified" datetime="2019-04-27T16:44:07+08:00">2019-04-27`</time>
               
             
           </span>
@@ -585,20 +597,25 @@
 
 <h1><span id="intro">Intro</span><a href="#intro" class="header-anchor">#</a></h1><p>《Pre-training of Deep Bidirectional Transformers for Language Understanding》</p>
 <ul>
-<li>Pre-training language representations. Pre-trained representations can also either be context-free or contextual, and contextual representations can further be unidirectional or bidirectional.</li>
-<li>Unsupervised BERT was trained using only a plain text corpus</li>
-<li><p>BERT uses a simple approach for this: We mask out 15% of the words in the input, run the entire sequence through a deep bidirectional Transformer encoder, and then predict only the masked words.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: the man went to the [MASK1] . he bought a [MASK2] of milk.</span><br><span class="line">Labels: [MASK1] = store; [MASK2] = gallon</span><br></pre></td></tr></table></figure>
+<li><p>Pre-training language representations. Pre-trained representations can also either be context-free or contextual, and contextual representations can further be unidirectional or bidirectional.</p>
 </li>
+<li><p>Unsupervised BERT was trained using only a plain text corpus</p>
+</li>
+<li><p>BERT uses a simple approach for this: We mask out 15% of the words in the input, run the entire sequence through a deep bidirectional Transformer encoder, and then predict only the masked words.</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Input: the man went to the [MASK1] . he bought a [MASK2] of milk.</span><br><span class="line">Labels: [MASK1] = store; [MASK2] = gallon</span><br></pre></td></tr></table></figure>
+<ul>
 <li><p><a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noopener">paper</a></p>
 </li>
-<li><a href="https://github.com/google-research/bert" target="_blank" rel="noopener">google bert</a></li>
+<li><p><a href="https://github.com/google-research/bert" target="_blank" rel="noopener">google bert</a></p>
+</li>
 <li><p><a href="https://github.com/huggingface/pytorch-pretrained-BERT" target="_blank" rel="noopener">pytorch_pretrained_bert</a></p>
 </li>
 <li><p>convert_tf_checkpoint_to_pytorch</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/qq_28168421/article/details/84038811</span><br><span class="line">python convert_tf_checkpoint_to_pytorch.py --tf_checkpoint_path chinese_L-12_H-768_A-12/bert_model.ckpt --bert_config_file chinese_L-12_H-768_A-12/bert_config.json --pytorch_dump_path chinese_L-12_H-768_A-12/bert_chinese.pth</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://blog.csdn.net/qq_28168421/article/details/84038811</span><br><span class="line">python convert_tf_checkpoint_to_pytorch.py --tf_checkpoint_path chinese_L-12_H-768_A-12/bert_model.ckpt --bert_config_file chinese_L-12_H-768_A-12/bert_config.json --pytorch_dump_path chinese_L-12_H-768_A-12/bert_chinese.pth</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>BERT, or <strong>Bidirectional Encoder Representations from Transformers</strong>, is a new method of <strong>pre-training language representations</strong> which obtains state-of-the-art results on a wide array of Natural Language Processing (NLP) tasks.</p>
 </blockquote>
@@ -614,8 +631,10 @@
 <p>The other important aspect of BERT is that <strong>it can be adapted to many types of NLP tasks very easily</strong>.</p>
 <p>If you already know what BERT is and you just want to get started, you can download the pre-trained models and run a state-of-the-art fine-tuning in only a few minutes.</p>
 <ul>
-<li><a href="https://github.com/google-research/bert#pre-trained-models" target="_blank" rel="noopener">pre-trained models</a></li>
-<li><a href="https://github.com/google-research/bert#fine-tuning-with-bert" target="_blank" rel="noopener">fine-tuning-with-bert</a></li>
+<li><p><a href="https://github.com/google-research/bert#pre-trained-models" target="_blank" rel="noopener">pre-trained models</a></p>
+</li>
+<li><p><a href="https://github.com/google-research/bert#fine-tuning-with-bert" target="_blank" rel="noopener">fine-tuning-with-bert</a></p>
+</li>
 </ul>
 <h1><span id="pre-trained-models">Pre-trained models</span><a href="#pre-trained-models" class="header-anchor">#</a></h1><ul>
 <li>Each .zip file contains three items:</li>
@@ -628,12 +647,16 @@
 <p>Before running this example you must download <strong> the GLUE data</strong> by running this script and unpack it to some directory $GLUE_DIR. Next, download the BERT-Base checkpoint and unzip it to some directory $BERT_BASE_DIR.</p>
 </blockquote>
 <ul>
-<li><a href="https://gluebenchmark.com/tasks" target="_blank" rel="noopener">Glue Datasets</a></li>
-<li><a href="https://blog.csdn.net/shuibuzhaodeshiren/article/details/87743286" target="_blank" rel="noopener">BERT之’测试数据集描述’</a></li>
+<li><p><a href="https://gluebenchmark.com/tasks" target="_blank" rel="noopener">Glue Datasets</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/shuibuzhaodeshiren/article/details/87743286" target="_blank" rel="noopener">BERT之’测试数据集描述’</a></p>
+</li>
 </ul>
 <h1><span id="related">Related</span><a href="#related" class="header-anchor">#</a></h1><ul>
-<li><a href="https://www.cnblogs.com/huangyc/p/10223075.html" target="_blank" rel="noopener">一文读懂BERT中的WordPiece</a></li>
-<li><a href="https://zhuanlan.zhihu.com/p/48612853" target="_blank" rel="noopener">BERT 详解</a><br>-</li>
+<li><p><a href="https://www.cnblogs.com/huangyc/p/10223075.html" target="_blank" rel="noopener">一文读懂BERT中的WordPiece</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/48612853" target="_blank" rel="noopener">BERT 详解</a></p>
+</li>
 </ul>
 
       
@@ -764,8 +787,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/08/model_training_tips/" rel="next" title="DL | 模型训练技巧">
-                <i class="fa fa-chevron-left"></i> DL | 模型训练技巧
+              <a href="/2019/04/08/pythonic/" rel="next" title="Python | 更加Pythonic的编程习惯">
+                <i class="fa fa-chevron-left"></i> Python | 更加Pythonic的编程习惯
               </a>
             
           </div>
@@ -774,7 +797,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/22/mutiltask-introduction/" rel="prev" title="多任务学习|深层神经网络中的多任务学习研究综述">
+              <a href="/2019/04/27/mutiltask-introduction/" rel="prev" title="多任务学习|深层神经网络中的多任务学习研究综述">
                 多任务学习|深层神经网络中的多任务学习研究综述 <i class="fa fa-chevron-right"></i>
               </a>
             

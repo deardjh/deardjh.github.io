@@ -137,18 +137,18 @@
 <meta name="keywords" content="MutilTaskLearning">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多任务学习|深层神经网络中的多任务学习研究综述">
-<meta property="og:url" content="https://deardjh.github.io/2019/04/22/mutiltask-introduction/index.html">
+<meta property="og:url" content="https://deardjh.github.io/2019/04/27/mutiltask-introduction/index.html">
 <meta property="og:site_name" content="Jhai.Dai">
 <meta property="og:description" content="目录# 引言#在机器学习(ML)中，我们通常关心的是针对特定指标的优化，无论这是某个基准上的得分还是业务KPI。为了做到这一点，我们通常训练一个模型或一组模型来执行我们想要的任务。然后，我们对这些模型进行微调和调整，直到它们的性能不再增加。虽然我们通常可以通过这种方式达到可接受的表现，通过专注于我们的单一任务，我们忽略了那些可能帮助我们在我们关心的指标上做得更好的信息。具体来说，这些信息来自于相">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://deardjh.github.io/2019/04/22/mutiltask-introduction/mtl.png">
-<meta property="og:image" content="https://deardjh.github.io/2019/04/22/mutiltask-introduction/mtl_images-001-2.png">
-<meta property="og:image" content="https://deardjh.github.io/2019/04/22/mutiltask-introduction/mtl_images-002-1.png">
-<meta property="og:updated_time" content="2019-04-22T14:34:31.720Z">
+<meta property="og:image" content="https://deardjh.github.io/2019/04/27/mutiltask-introduction/mtl.png">
+<meta property="og:image" content="https://deardjh.github.io/2019/04/27/mutiltask-introduction/mtl_images-001-2.png">
+<meta property="og:image" content="https://deardjh.github.io/2019/04/27/mutiltask-introduction/mtl_images-002-1.png">
+<meta property="og:updated_time" content="2019-04-27T08:45:51.109Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多任务学习|深层神经网络中的多任务学习研究综述">
 <meta name="twitter:description" content="目录# 引言#在机器学习(ML)中，我们通常关心的是针对特定指标的优化，无论这是某个基准上的得分还是业务KPI。为了做到这一点，我们通常训练一个模型或一组模型来执行我们想要的任务。然后，我们对这些模型进行微调和调整，直到它们的性能不再增加。虽然我们通常可以通过这种方式达到可接受的表现，通过专注于我们的单一任务，我们忽略了那些可能帮助我们在我们关心的指标上做得更好的信息。具体来说，这些信息来自于相">
-<meta name="twitter:image" content="https://deardjh.github.io/2019/04/22/mutiltask-introduction/mtl.png">
+<meta name="twitter:image" content="https://deardjh.github.io/2019/04/27/mutiltask-introduction/mtl.png">
 
 
 
@@ -157,7 +157,7 @@
 
 
 
-  <link rel="canonical" href="https://deardjh.github.io/2019/04/22/mutiltask-introduction/">
+  <link rel="canonical" href="https://deardjh.github.io/2019/04/27/mutiltask-introduction/">
 
 
 
@@ -425,7 +425,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deardjh.github.io/2019/04/22/mutiltask-introduction/">
+    <link itemprop="mainEntityOfPage" href="https://deardjh.github.io/2019/04/27/mutiltask-introduction/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jhai.Dai">
@@ -469,7 +469,7 @@
                 
               
 
-              <time title="创建时间：2019-04-22` 22:34:31" itemprop="dateCreated datePublished" datetime="2019-04-22T22:34:31+08:00">2019-04-22`</time>
+              <time title="创建时间：2019-04-27` 16:45:51" itemprop="dateCreated datePublished" datetime="2019-04-27T16:45:51+08:00">2019-04-27`</time>
             
 
             
@@ -502,7 +502,7 @@
 
           
           
-            <span id="/2019/04/22/mutiltask-introduction/" class="leancloud_visitors" data-flag-title="多任务学习|深层神经网络中的多任务学习研究综述">
+            <span id="/2019/04/27/mutiltask-introduction/" class="leancloud_visitors" data-flag-title="多任务学习|深层神经网络中的多任务学习研究综述">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -607,33 +607,37 @@
 <p>反过来，通过假设存在少量潜在的基本任务，允许来自不同组的两个任务重叠。 然后，他们将每个实际任务 t 的参数矢量 t 建模为这样一个线性组合: 在 Lst 处的参数矢量 t 是包含 k 个潜在任务的参数向量的矩阵，而 st ∈ r k st ∈ r k 是包含线性组合系数的向量。 此外，它们还限制潜在任务中的线性组合分布为稀疏; 两个任务之间稀疏模式的重叠控制了这些任务之间的共享量。 最后，[37]学习一小组共享的假设，然后将每个任务映射到一个单一的假设。</p>
 <h1><span id="zui-jin-guan-yu-shen-du-xue-xi-de-mtl-de-gong-zuo">最近关于深度学习的 MTL 的工作</span><a href="#zui-jin-guan-yu-shen-du-xue-xi-de-mtl-de-gong-zuo" class="header-anchor">#</a></h1><p>虽然最近许多深度学习方法都使用了多任务学习——无论是显式的还是隐式的——作为他们模型的一部分(下一节将介绍突出的例子) ，但是他们都使用了我们前面介绍的两种方法，硬参数和软参数共享。 相比之下，只有少数几篇论文着眼于在深层神经网络中开发更好的 MTL 机制。</p>
 <ul>
-<li><p>深层关系网络</p>
+<li>深层关系网络</li>
+</ul>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在计算机视觉的 MTL 中，各种方法通常共享卷积层，而学习任务特定的完全连接层。 通过提出深层关系网络来改进这些模型。 除了图<span class="number">3</span>中显示的共享层和特定任务层的结构之外，它们还在完全连接的层上放置矩阵先验，这使得模型能够学习任务之间的关系，类似于我们之前看到的一些贝叶斯模型。 然而，这种方法仍然依赖于一种预先定义的共享结构，这种结构可能足以解决经过充分研究的计算机视觉问题，但是对于新任务来说很容易出错。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>完全自适应的特征共享</p>
+<ul>
+<li>完全自适应的特征共享</li>
+</ul>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">从另一个极端开始，[<span class="number">39</span>]提出了一种自下而上的方法，这种方法从一个薄的网络开始，在训练过程中使用一种标准，促进类似任务的分组，贪婪地扩大网络。 动态创建分支的 widing 过程可以在图<span class="number">4</span>中看到。 然而，贪婪的方法可能无法发现一个全局最优的模型，而分配每个分支到一个任务却不允许模型学习任务之间更复杂的交互。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>十字绣网络</p>
+<ul>
+<li>十字绣网络</li>
+</ul>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="number">40</span>]从两个独立的模型结构开始，就像软参数共享一样。 然后，他们使用所谓的十字绣单元，让模型决定以何种方式特定任务的网络利用其他任务的知识，通过学习前面各层的输出线性组合。 他们的架构可以在图<span class="number">5</span>中看到，其中他们只放置十字绣单位后，池和完全连接的层。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>低层监督</p>
+<ul>
+<li>低层监督</li>
+</ul>
 <figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">相比之下，在自然语言处理(NLP)中，最近的工作集中于**为多任务学习寻找更好的任务层次结构**:<span class="string">[41]</span>表明，低层任务，即通常用于预处理的 NLP 任务，如词性标注和命名实体识别，当用作辅助任务时，应该在较低层进行监督。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>联合多任务模型</p>
+<ul>
+<li>联合多任务模型</li>
+</ul>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">基于这一发现，[<span class="number">42</span>]预先定义了一个由几个 NLP 任务组成的层次结构，如图<span class="number">6</span>所示，作为多任务学习的联合模型。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>以不确定性加权亏损</p>
-</li>
+<ul>
+<li>以不确定性加权亏损</li>
 </ul>
 <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">与其学习共享的结构，[<span class="number">43</span>]考虑每个任务的不确定性，采取一种正交的方法。 然后通过推导基于任务相关不确定性最大高斯似然的多任务损失函数来调整每个任务在成本函数中的相对权重。 它们用于逐像素深度回归、语义分割和实例分割的体系结构如图<span class="number">7</span>所示。</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>Mtl 的张量因子分解</p>
-<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最近的工作试图将现有的 MTL 方法推广到深度学习: <span class="string">[44]</span>将前面讨论过的一些矩阵分解方法推广到使用张量分解将模型参数分解为每一层的共享参数和任务特定参数。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>水闸网络</p>
-<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后，我们提出了一个概括了基于深度学习的 MTL 方法的模型，例如硬参数共享和跨缝网络，块稀疏正则化方法，以及最新的自然语言处理方法来创建一个任务层次。 这个模型，如图<span class="number">8</span>所示，允许学习哪些层和子空间应该被共享，以及在哪些层网络已经学习了输入序列的最佳表示。</span><br></pre></td></tr></table></figure>
-</li>
+<li>Mtl 的张量因子分解</li>
 </ul>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最近的工作试图将现有的 MTL 方法推广到深度学习: <span class="string">[44]</span>将前面讨论过的一些矩阵分解方法推广到使用张量分解将模型参数分解为每一层的共享参数和任务特定参数。</span><br></pre></td></tr></table></figure>
+<ul>
+<li>水闸网络</li>
+</ul>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后，我们提出了一个概括了基于深度学习的 MTL 方法的模型，例如硬参数共享和跨缝网络，块稀疏正则化方法，以及最新的自然语言处理方法来创建一个任务层次。 这个模型，如图<span class="number">8</span>所示，允许学习哪些层和子空间应该被共享，以及在哪些层网络已经学习了输入序列的最佳表示。</span><br></pre></td></tr></table></figure>
 <h1><span id="wo-ying-gai-zai-wo-de-mo-xing-zhong-fen-xiang-shi-me">我应该在我的模型中分享什么？</span><a href="#wo-ying-gai-zai-wo-de-mo-xing-zhong-fen-xiang-shi-me" class="header-anchor">#</a></h1><p>Mtl 历史上的大多数方法都集中在<strong>任务从相同分布中提取的场景上</strong>(Baxter，1997)。 <strong>虽然这种情况有利于共享，但并不总是成立</strong>。 因此，为了开发 MTL 的健壮模型，我们<strong>必须能够处理不相关或只是松散相关的任务</strong>。</p>
 <p>虽然针对深度学习的 MTL 的<strong>早期工作已经预先指定了每个任务配对应该共享哪些层，但是这种策略并不具有可伸缩性，而且严重偏向 MTL 架构</strong>。 最初由 Caruana (1996)提出的硬参数共享技术，在20年后仍然是标准技术。 虽然在许多场景中很有用，但<strong>如果任务之间没有密切关系或者需要在不同层次上进行推理，硬参数共享就会很快崩溃</strong>。因此，最近的方法着眼于了解<strong>应该分享什么，并且通常比硬参数分享更有效</strong>。 此外，赋予我们的模型学习任务层次结构的能力是有帮助的，特别是在需要不同粒度的情况下。</p>
 <p>正如最初提到的，我们正在做 MTL 尽快我们是优化一个以上的损失函数。 与其限制我们的模型将所有任务的知识压缩到相同的参数空间中，不如利用我们已经讨论过的 MTL 的先进技术，使我们的模型能够了解任务之间应该如何相互作用。</p>
@@ -643,7 +647,9 @@
 <p>最近的工作[55]发现，对于 NLP 中的序列标签问题，具有紧凑和均匀标签分布的辅助任务更为可取，我们已经在实验中证实了这一点(Ruder 等人，2017)。 此外，研究发现，主要任务在非停滞的辅助任务中很可能很快停滞不前[56]。</p>
 <p>然而，这些实验到目前为止在范围上还是有限的，最近的发现仅仅提供了对神经网络中的多任务学习进行更深入理解的第一线索。</p>
 <h1><span id="zong-jie">总结</span><a href="#zong-jie" class="header-anchor">#</a></h1><p>在这篇综述中，我回顾了多任务学习的文献历史以及最近关于深度学习的 MTL 的工作。 虽然 MTL 正在被越来越频繁的使用，20年前的硬参数共享范例仍然是普遍的神经网络为基础的 MTL。 <strong>然而，在学习分享什么方面的最新进展是有希望的。</strong> 与此同时，我们对任务的理解—-它们的相似性、关系、层次以及对 MTL 的好处—-仍然是有限的，我们需要更多地了解它们，以便更好地理解 MTL 相对于深层神经网络的泛化能力。</p>
-<h1><span id="can-kao">参考</span><a href="#can-kao" class="header-anchor">#</a></h1><p>-<a href="http://ruder.io/multi-task/" target="_blank" rel="noopener">rudermutil-task</a></p>
+<h1><span id="can-kao">参考</span><a href="#can-kao" class="header-anchor">#</a></h1><ul>
+<li><a href="http://ruder.io/multi-task/" target="_blank" rel="noopener">rudermutil-task</a></li>
+</ul>
 
       
     </div>
@@ -663,9 +669,9 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2019/04/22/mutiltask-introduction/">多任务学习|深层神经网络中的多任务学习研究综述</a></p>
+  <p><span>本文标题:</span><a href="/2019/04/27/mutiltask-introduction/">多任务学习|深层神经网络中的多任务学习研究综述</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Jhai.Dai 的个人博客">Jhai.Dai</a></p>
-  <p><span>发布时间:</span>2019年04月22日 - 22:04</p>
+  <p><span>发布时间:</span>2019年04月27日 - 16:04</p>
   <p><span>版权声明:</span>本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 </a> 许可协议。转载请注明出处！</p>
       
     </div>
